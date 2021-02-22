@@ -1,17 +1,20 @@
 [
   {
-    "title": "Free Consultation",
-    "description": "New clients recieve an obligation free consultation.",
-    "image": "images/features/noun_branding_1885335.svg"
+    "title": "Strong",
+    "description": "Stockfish is a 10-time winner of the Top Chess Engine Championship.",
+    "url": "https://en.wikipedia.org/wiki/Top_Chess_Engine_Championship#Tournament_results_(TCEC)",
+    "button_text": "View TCEC results"
   },
   {
-    "title": "Certified Accountants",
-    "description": "All members of our team are certified accountants.",
-    "image": "images/features/noun_The Process_1885341.svg"
+    "title": "Open Source",
+    "description": "Stockfish is open source (GPLv3 license). That means you can read the code, modify it, and contribute back.",
+    "url": "https://github.com/official-stockfish/Stockfish",
+    "button_text": "Stockfish on GitHub"
   },
   {
-    "title": "Tax Compliance",
-    "description": "We stay up to date on the latest changes to the tax code.",
-    "image": "images/features/noun_3d modeling_1885342.svg"
+    "title": "Run Anywhere",
+    "description": "You can use Stockfish on your computer or on your iOS or Android device. So you can get world-class chess analysis, wherever you are.",
+    "url": "/download/",
+    "button_text": "Download"
   }
 ]

@@ -1,16 +1,16 @@
 .button {
   white-space: nowrap;
   display: inline-block;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 14px;
+  // height: 40px;
+  // line-height: 35px;
+  padding: 10px 14px;
   //box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   background: $primary;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.025em;
+  // text-transform: uppercase;
+  // letter-spacing: 0.025em;
   color: #ffffff;
   text-decoration: none;
   -webkit-transition: all 0.15s ease;
@@ -22,4 +22,13 @@
     //box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
     text-decoration: none;
   }
+}
+
+.button-large {
+  // font-size: 20px;
+  // height: 60px;
+  padding: 15px 40px;
+  // line-height: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
 }

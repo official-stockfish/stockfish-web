@@ -2,6 +2,9 @@
   a {
     text-decoration: underline;
   }
+  .button {
+    text-decoration: none;
+  }
   img {
     max-width: 100%;
     height: auto;
@@ -30,9 +33,10 @@
   h2 {
     font-family: $font-family-base;
     font-size: 26px;
-    font-weight: normal;
+    font-weight: bold;
     line-height: 1.4;
     margin-top: 30px;
+    color: $primary;
   }
   h3 {
     font-family: $font-family-base;
@@ -67,6 +71,7 @@
   }
   table {
     width: 100%;
+    border-bottom: 1px solid $white-offset;
     margin-top: 30px;
     margin-bottom: 30px;
     th,

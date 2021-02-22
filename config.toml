@@ -1,6 +1,5 @@
-baseURL = "www.example.com"
 languageCode = "en-us"
-title = "Hugo Serif Theme"
+title = "Stockfish - Open Source Chess Engine"
 
 [params]
   # In most cases you will only want to use either one of these. If you have Google Analytics included in your GTM tags don't put your GA ID here. Otherwise your data might be useless.
@@ -8,51 +7,55 @@ title = "Hugo Serif Theme"
   google_tag_manager_id = ""
 
   [params.homepage]
-    show_call_box = true
     hide_view_all_services = false  # set to true to hide the View All Services button
 
   [params.logo]
-    mobile = "images/logo/logo-mobile.svg"
-    desktop = "images/logo/logo.svg"
+    mobile = "images/logo/icon_128x128@2x.png"
+    desktop = "images/logo/icon_128x128@2x.png"
     desktop_height = "36px"
-    alt = "Serif - A Hugo Business Theme"
+    alt = "Stockfish Logo"
 
   [params.homepage_meta_tags]
-    meta_description = "Serif is a modern business theme for Hugo. It contains content types for the archetypical business website. The theme is fully responsive, blazing fast and artfully illustrated."
-    meta_og_title = "Hugo Serif Theme"
-    meta_og_type = "website"
-    meta_og_url = "https://hugo-serif.netlify.app"
-    meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-serif-theme/master/images/tn.png"
-    meta_og_description = "Serif is a modern business theme for Hugo. It contains content types for the archetypical business website. The theme is fully responsive, blazing fast and artfully illustrated."
-    meta_twitter_card = "summary"
-    meta_twitter_site = "@zerostaticio"
-    meta_twitter_creator = "@zerostaticio"
+    meta_description = "Stockfish is a powerful and open source chess engine."
+    # meta_og_title = "Hugo Serif Theme"
+    # meta_og_type = "website"
+    # meta_og_url = "https://hugo-serif.netlify.app"
+    # meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-serif-theme/master/images/tn.png"
+    # meta_og_description = "Serif is a modern business theme for Hugo. It contains content types for the archetypical business website. The theme is fully responsive, blazing fast and artfully illustrated."
+    # meta_twitter_card = "summary"
+    # meta_twitter_site = "@zerostaticio"
+    # meta_twitter_creator = "@zerostaticio"
 
   [params.team]
     summary_large_truncate = 120  # How many characters to include in the summary of the team bios (large layout) before truncating
 
   [params.footer]
-    copyright_text = 'Free Hugo theme by <a class="zerostatic" href="https://www.zerostatic.io">www.zerostatic.io</a>'
+    copyright_text = 'Stockfish is licensed under the GPL license. Website © 2010-2021 Daylen Yang. Stockfish icon by Klein Maetschke.'
 
 [menu]
   # Main Menu
   [[menu.main]]
-    name = "Services"
-    url = "/services/"
+    name = "Download"
+    url = "/download/"
       weight = 1
 
   [[menu.main]]
-      name = "Team"
-      url = "/team/"
-      weight = 2
+    name = "Get Involved"
+    url = "/get-involved/"
+      weight = 3
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+      weight = 4
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+      weight = 5
 
   # Footer Menu
   [[menu.footer]]
     name = "Home"
     url = "/"
       weight = 1
-
-  [[menu.footer]]
-    name = "Contact"
-    url = "/contact/"
-      weight = 2

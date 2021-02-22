@@ -1,51 +1,41 @@
 ---
 title: 'About'
-date: 2018-02-22T17:01:34+07:00
-menu: 'main'
+menu: main
 ---
 
-Lorem markdownum aequalis strigis. _Saetigeri iubeas_, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.
 
-## Ne verba patulosque numen vix libet
+## Get Notified
 
-Agitabitur signa lympha; non lacunae, mox cum tumulis quoque triste dictis.
-Ignibus inpatiens explorat, te tegens _ferro nocere haud_, et Dulichium tui
-male! Quo sed [fuit flexit et](#vexant-achivi) hic die solido, gloria?
+Get notified about new releases by [following us on
+Twitter](http://twitter.com/stockfishchess), [liking us on
+Facebook](http://facebook.com/stockfishchess), or [reading our
+blog](/blog/).
 
-1. Cum det dixit Parcarum qui spemque est
-2. Exit ex huic
-3. Quod consiste agitataque claustraque vicina videt lacertis
-4. Loquor videt
-5. Ardua non igne caelesti coniugis cognovi diversorum
-6. Per nunc pariterque saeva vindicet
+## Engine Authors
 
-Locus evicit loquuntur Tyrrhena omnes, obstipui pugnabant temptavit Phoco _vati_
-dabant deus. Memorata haberet sepulcrales gentisque dum sic, in flumina templa!
-Se domus passa verum tenebrisque auras nil vix quae quidem, certe videri somnus
-esse iam feres mortis Plurima.
+The Stockfish engine was developed by Tord Romstad, Marco Costalba, and
+Joona Kiiski. It is now being developed and maintained by [the Stockfish
+community](https://github.com/official-stockfish/Stockfish/blob/master/AUTHORS).
 
-## Postquam tamen
+## History
 
-Et nec ingentem est minus faciunt praecipue posse auctoremque sedes transmittere
-et pedes miratur erat animaeque. Tellus admonuit humanam funes, sagittis et
-licet! Inserui quamvis Clymeni.
+The Stockfish project started with the open source [Glaurung engine](https://www.chessprogramming.org/Glaurung),
+authored by Tord Romstad. In November 2008, Marco Costalba forked the
+Glaurung 2.1 code and introduced Stockfish 1.0. Tord and Joona Kiiski
+joined the Stockfish project and the Glaurung project slowly faded away.
+Meanwhile, Stockfish quickly rose to become the strongest open source
+chess engine, with frequent updates every few months. Today, it remains
+[one of the strongest engines](https://en.wikipedia.org/wiki/Top_Chess_Engine_Championship#Tournament_results_%28TCEC%29) in the world.
 
-- Parens est studiisque interea
-- Pro istis mediis carnes iste nec imperat
-- Te vocas orat nisi quantumque castra
-- Gestumque crepuscula esse videntur coegit
-- Ambo videtque gerat aquae ferens vagina
-- Adde leviter faciam tetigisse regunt concava in
+## About this website
 
-Superi monilia omnes Cyprio Scylla cibos punica quae succincta pallent de
-incubat hostes montibus, de moderato efficiet vulnere. Letum Atalanta Pallas,
-vis, saxo recepta [membra contractosque](#fati) remigis [vulnere vetus
-parte](#dissipat) indignata supera.
+This website was built by [Daylen Yang](http://daylen.com/). The
+Stockfish icon was designed by [Klein Maetschke](http://iamkle.in).
 
-Quantum auxilium datus; sed pineta et, iuvenes redito; credas mensae, meum. Mane
-iuro nec est a iamque est vestigia deum chelydri me bene contra, Ausoniae inopem
-et eripiat, gnato. Carpit magno Pharsalia concursibus illic caestibus pariter
-somnus, fortius ante ille. Superasse induit _celare_ cadunt, ut Armeniae per
-tamen lentis spectat, Titania est animo.
+## About the GPL
+
+Stockfish is free, and distributed under the GNU General Public License version 3 (GPL v3). Essentially, this means you are free to do almost exactly what you want with the program, including distributing it among your friends, making it available for download from your website, selling it (either by itself or as part of some bigger software package), or using it as the starting point for a software project of your own.
+
+The only real limitation is that whenever you distribute Stockfish in some way, you MUST always include the full source code, or a pointer to where the source code can be found, to generate the exact binary you are distributing. If you make any changes to the source code, these changes must also be made available under the GPL.
+
+For full details, [read the license file](https://github.com/official-stockfish/Stockfish/blob/master/Copying.txt).

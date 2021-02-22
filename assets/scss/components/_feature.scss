@@ -1,7 +1,7 @@
 .feature {
   height: 100%;
   border: 1px solid $white-offset;
-  border-radius: 3px;
+  border-radius: 8px;
   padding: 20px;
   background-color: #ffffff;
   display: flex;
@@ -23,7 +23,7 @@
   .feature-title {
   }
   .feature-content {
-    margin-bottom: 0;
+    margin-bottom: auto;
     margin-top: auto;
   }
 }

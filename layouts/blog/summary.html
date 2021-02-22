@@ -1,0 +1,8 @@
+<div class="summary">
+    <div class="post-date mb-1"><b>{{ .PublishDate.Format "2006-01-02" }}</b></div>
+    <h1>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </h1>
+    {{ .Content | truncate 280 "…" }}
+    <a href="{{ .Permalink }}" class="button">read more</a>
+</div>
