@@ -19,7 +19,15 @@
     <div class="row justify-content-start">
       <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
         {{ .Content }}
-        <a href="/download/" class="button button-large">Download Stockfish</a>
+        <a href="/download/" class="button button-large mb-6">Download Stockfish</a>
+        <h2><a href="/blog/">Latest from the blog</a></h2>
+        <ul>
+        {{- range ( where site.RegularPages "Section" "blog" | first 3 ) }}
+        <li class="blog-preview">
+          <span class="muted">{{ .PublishDate.Format "2006-01-02" }}</span>: <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+        {{- end}}
+        </ul>
       </div>
       {{ if .Params.intro_image }}
       <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
