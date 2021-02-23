@@ -1,0 +1,19 @@
+Redirect 301 /mac-help https://github.com/daylen/stockfish-mac/wiki/User-Guide
+Redirect 301 /mac/user-guide https://github.com/daylen/stockfish-mac/wiki/User-Guide
+
+AddType text/html .shtml
+AddHandler server-parsed .html
+AddHandler server-parsed .shtml
+Options Indexes FollowSymLinks Includes
+
+RewriteEngine on
+RewriteCond %{http_host} ^stockfishchess.com [NC]
+RewriteRule ^(.*)$ http://stockfishchess.org/$1 [R=301,NC,L]
+RewriteCond %{http_host} ^www.stockfishchess.com [NC]
+RewriteRule ^(.*)$ http://stockfishchess.org/$1 [R=301,NC,L]
+RewriteCond %{http_host} ^stockfish.io [NC]
+RewriteRule ^(.*)$ http://stockfishchess.org/$1 [R=301,NC,L]
+RewriteCond %{http_host} ^www.stockfish.io [NC]
+RewriteRule ^(.*)$ http://stockfishchess.org/$1 [R=301,NC,L]
+RewriteCond %{http_host} ^www.stockfishchess.org [NC]
+RewriteRule ^(.*)$ http://stockfishchess.org/$1 [R=301,NC,L]
