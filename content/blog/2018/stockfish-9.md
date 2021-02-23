@@ -3,6 +3,7 @@ title: "Stockfish 9"
 date: 2018-02-04T00:00:00-08:00
 aliases:
 - /post/180690834147/stockfish-9
+- /post/180690834147/stockfish-9/amp
 ---
 
 I am pleased to announce that Stockfish 9 is out.

@@ -3,6 +3,7 @@ title: "Statement on Fat Fritz 2"
 date: 2021-02-15T18:08:00-08:00
 aliases:
 - /post/643239805544792064/statement-on-fat-fritz-2
+- /post/643239805544792064/statement-on-fat-fritz-2/amp
 ---
 
 Stockfish is an open-source project, sharing and freely distributing the

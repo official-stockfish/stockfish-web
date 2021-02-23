@@ -3,6 +3,7 @@ title: "Stockfish 10"
 date: 2018-12-01T10:52:00-08:00
 aliases:
 - /post/180691011237/stockfish-10
+- /post/180691011237/stockfish-10/amp
 ---
 
 Official release version of Stockfish 10.

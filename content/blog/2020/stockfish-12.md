@@ -3,6 +3,7 @@ title: "Stockfish 12"
 date: 2020-09-02T11:44:00-08:00
 aliases:
 - /post/628172810852925440/stockfish-12
+- /post/628172810852925440/stockfish-12/amp
 ---
 
 It is our pleasure to release Stockfish 12 to users worldwide.

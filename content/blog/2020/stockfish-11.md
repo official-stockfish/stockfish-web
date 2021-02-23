@@ -3,6 +3,7 @@ title: "Stockfish 11"
 date: 2020-01-15T23:29:00-08:00
 aliases:
 - /post/190398991302/stockfish-11
+- /post/190398991302/stockfish-11/amp
 ---
 
 It is our pleasure to release Stockfish 11 to our fans and supporters.

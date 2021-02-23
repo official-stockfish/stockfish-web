@@ -3,6 +3,7 @@ title: "Introducing NNUE Evaluation"
 date: 2020-08-07T14:36:00-08:00
 aliases:
 - /post/625828091343896577/introducing-nnue-evaluation
+- /post/625828091343896577/introducing-nnue-evaluation/amp
 ---
 
 As of August 6, the efficiently updatable neural network (NNUE)

@@ -3,6 +3,7 @@ title: "Stockfish 13"
 date: 2021-02-19T09:47:00-08:00
 aliases:
 - /post/643570707142492160/stockfish-13
+- /post/643570707142492160/stockfish-13/amp
 ---
 
 
