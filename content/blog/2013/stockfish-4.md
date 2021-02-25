@@ -3,6 +3,7 @@ title: "Stockfish 4"
 date: 2013-08-20T14:09:00-08:00
 aliases:
 - /post/58816729741/stockfish-4
+- /post/58816729741/stockfish-4/amp
 ---
 
 Stockfish 4 has been released. You can download at

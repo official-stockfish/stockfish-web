@@ -3,6 +3,7 @@ title: "Stockfish 2.1"
 date: 2011-05-04T17:07:00-08:00
 aliases:
 - /post/5203305648/stockfish-21
+- /post/5203305648/stockfish-21/amp
 ---
 
 This is Stockfish 2.1.

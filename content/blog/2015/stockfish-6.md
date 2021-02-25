@@ -3,6 +3,7 @@ title: "Stockfish 6"
 date: 2015-01-28T14:46:00-08:00
 aliases:
 - /post/109428754862/stockfish-6
+- /post/109428754862/stockfish-6/amp
 ---
 
 Stockfish 6 is now available!

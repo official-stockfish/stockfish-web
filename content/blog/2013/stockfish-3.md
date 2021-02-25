@@ -3,6 +3,7 @@ title: "Stockfish 3"
 date: 2013-04-30T10:35:00-08:00
 aliases:
 - /post/49268277468/stockfish-3
+- /post/49268277468/stockfish-3/amp
 ---
 
 This is Stockfish 3.

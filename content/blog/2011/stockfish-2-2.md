@@ -3,6 +3,7 @@ title: "Stockfish 2.2"
 date: 2011-12-29T10:35:00-08:00
 aliases:
 - /post/14983653771/stockfish-22
+- /post/14983653771/stockfish-22/amp
 ---
 
 To start the new year with a fresh new base I'd like to release

@@ -3,6 +3,7 @@ title: "Stockfish DD"
 date: 2013-11-29T15:45:00-08:00
 aliases:
 - /post/68506094600/stockfish-dd
+- /post/68506094600/stockfish-dd/amp
 ---
 
 This is a new release of Stockfish after the last TCEC season. It is

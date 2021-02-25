@@ -3,6 +3,7 @@ title: "Stockfish 2.2.2"
 date: 2012-01-14T13:10:00-08:00
 aliases:
 - /post/15845018720/stockfish-222
+- /post/15845018720/stockfish-222/amp
 ---
 
 The 64-bit Windows compiles are built with GCC instead of Intel, so

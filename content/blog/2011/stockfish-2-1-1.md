@@ -3,6 +3,7 @@ title: "Stockfish 2.1.1"
 date: 2011-05-08T15:27:00-08:00
 aliases:
 - /post/5316251554/stockfish-211
+- /post/5316251554/stockfish-211/amp
 ---
 
 This is a maintenance release to fix the book reading issue reported by

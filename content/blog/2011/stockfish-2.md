@@ -3,6 +3,7 @@ title: "Stockfish 2.0"
 date: 2011-01-01T00:00:00-08:00
 aliases:
 - /post/6064047789/stockfish-20
+- /post/6064047789/stockfish-20/amp
 ---
 
 Diff stats from 1.9.1 says:

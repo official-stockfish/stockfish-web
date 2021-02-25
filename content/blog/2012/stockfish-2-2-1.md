@@ -3,6 +3,7 @@ title: "Stockfish 2.2.1"
 date: 2012-01-06T10:21:00-08:00
 aliases:
 - /post/15845018720/stockfish-222
+- /post/15845018720/stockfish-222/amp
 ---
 
 This version fixes the time management issue. The signature is 5457475.

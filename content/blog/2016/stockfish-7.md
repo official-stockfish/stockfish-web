@@ -3,6 +3,7 @@ title: "Stockfish 7"
 date: 2016-01-02T13:53:00-08:00
 aliases:
 - /post/136483912072/stockfish-7
+- /post/136483912072/stockfish-7/amp
 ---
 
 Stockfish 7 is out!
