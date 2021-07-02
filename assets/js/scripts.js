@@ -42,7 +42,7 @@ function GetFastAndSlow(json, old_windows) {
 
 var windows_table = document.getElementById('windows-table');
 if (windows_table) {
-    fetch('/windows.json').then(response => response.json()).then(data => {
+    fetch('/windows.json?a').then(response => response.json()).then(data => {
         console.log(data);
         var fast_and_slow = GetFastAndSlow(data, IsOldWindows());
         console.log(fast_and_slow);
