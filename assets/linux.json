@@ -3,26 +3,26 @@
 		{
 			"arch": "BMI2",
 			"wiki_url": "https://en.wikipedia.org/wiki/Bit_manipulation_instruction_set#Supporting_CPUs",
-			"file": "/files/stockfish_13_linux_x64_bmi2.zip"
+			"file": "/files/stockfish_14_linux_x64_bmi2.zip"
 		},
 		{
 			"arch": "AVX2",
 			"wiki_url": "https://en.wikipedia.org/wiki/Advanced_Vector_Extensions#CPUs_with_AVX2",
-			"file": "/files/stockfish_13_linux_x64_avx2.zip"
+			"file": "/files/stockfish_14_linux_x64_avx2.zip"
 		},
 		{
 			"arch": "SSE4.1 + POPCNT",
 			"wiki_url": "https://en.wikipedia.org/wiki/SSE4#Supporting_CPUs",
-			"file": "/files/stockfish_13_linux_x64_modern.zip"
+			"file": "/files/stockfish_14_linux_x64_modern.zip"
 		},
 		{
 			"arch": "SSSE3",
 			"wiki_url": "https://en.wikipedia.org/wiki/SSSE3#CPUs_with_SSSE3",
-			"file": "/files/stockfish_13_linux_x64_ssse.zip"
+			"file": "/files/stockfish_14_linux_x64_ssse.zip"
 		},
 		{
 			"arch": "64-bit",
-			"file": "/files/stockfish_13_linux_x64.zip"
+			"file": "/files/stockfish_14_linux_x64.zip"
 		}
 	]
 }
