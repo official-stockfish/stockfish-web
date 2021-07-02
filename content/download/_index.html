@@ -6,61 +6,38 @@ aliases:
 ---
 <h2>Windows</h2>
 <p>Note: The Stockfish chess engine is a command line program. You may want to use it in your own UCI-compatible <a href="https://www.chessprogramming.org/GUI#Chess_GUIs">chess GUI</a>.</p>
-<table width="100%">
+<table width="100%" id="windows-table">
     <tr>
-        <th>Instruction set / CPU</th>
-        <th></th>
+        <td><b>⚡️ Faster</b>: Works on modern computers. </td>
+        <td><a href="#" class="radius success button" id="windows-fast-button">Download (<span id="windows-fast-text"></span>)</a></td>
     </tr>
     <tr>
-        <td><b>⚡️ BMI2</b>: recommended for most Intel processors and AMD Ryzen (Zen 3) <a href="https://en.wikipedia.org/wiki/Bit_manipulation_instruction_set#Supporting_CPUs">details</a></td>
-        <td><a href="/files/stockfish_13_win_x64_bmi2.zip" class="radius success button">Download</a></td>
-    </tr>
-    <tr>
-        <td><b>⚡️ AVX2</b>: recommended for AMD Ryzen (Zen, Zen+, Zen 2) <a href="https://en.wikipedia.org/wiki/Advanced_Vector_Extensions#CPUs_with_AVX2">details</a></td>
-        <td><a href="/files/stockfish_13_win_x64_avx2.zip" class="radius success button">Download</a></td>
-    </tr>
-    <tr>
-        <td><b>🐢 64-bit</b>: Maximally compatible but slow</td>
-        <td><a href="/files/stockfish_13_win_x64.zip" class="radius success button">Download</a></td>
+        <td><b>🐢 More compatible</b>: Is a bit slower, but works on the vast majority of computers. </td>
+        <td><a href="#" class="radius success button" id="windows-compat-button">Download (<span id="windows-compat-text"></span>)</a></td>
     </tr>
 </table>
-Want more options? <a href="/download/windows">See all Windows binaries</a>
+If you're looking for binaries for a specific CPU architecture, <a href="/download/windows">see all Windows binaries</a>
 
+<h2>Android</h2>
+<p>One app that we recommend is DroidFish:<br />
+<a href="https://play.google.com/store/apps/details?id=org.petero.droidfish"><img src="/svg/google-play.svg" width="160px" class="sfm-store-button"></a>
+<p>If you want the engine only, you can binaries: <a href="/files/stockfish_13_android.zip">Android, version 13 (zip)</a>.</p>
 <h2>macOS</h2>
 <p>The easiest way to get started is with the Stockfish app:<br />
 <a href="https://itunes.apple.com/us/app/stockfish/id801463932?ls=1&mt=12"><img src="/svg/mac-app-store.svg" width="240px" class="sfm-store-button"></a>
 </p>
 <p>If you want the engine only, you can get it through <a href="https://brew.sh">Homebrew</a>:
 <code>brew install stockfish</code></p>
-<h2>Linux</h2>
-<p>Note: The Stockfish chess engine is a command line program. You may want to use it in your own UCI-compatible <a href="https://www.chessprogramming.org/GUI#Chess_GUIs">chess GUI</a>.</p>
-<table width="100%">
-    <tr>
-        <th>Instruction set / CPU</th>
-        <th></th>
-    </tr>
-    <tr>
-        <td><b>⚡️ BMI2</b>: recommended for most Intel processors and AMD Ryzen (Zen 3) <a href="https://en.wikipedia.org/wiki/Bit_manipulation_instruction_set#Supporting_CPUs">details</a></td>
-        <td><a href="/files/stockfish_13_linux_x64_bmi2.zip" class="radius success button">Download</a></td>
-    </tr>
-    <tr>
-        <td><b>⚡️ AVX2</b>: recommended for AMD Ryzen (Zen, Zen+, Zen 2) <a href="https://en.wikipedia.org/wiki/Advanced_Vector_Extensions#CPUs_with_AVX2">details</a></td>
-        <td><a href="/files/stockfish_13_linux_x64_avx2.zip" class="radius success button">Download</a></td>
-    </tr>
-    <tr>
-        <td><b>🐢 64-bit</b>: Maximally compatible but slow</td>
-        <td><a href="/files/stockfish_13_linux_x64.zip" class="radius success button">Download</a></td>
-    </tr>
-</table>
-Want more options? <a href="/download/linux">See all Linux binaries</a>
+
 <h2>iOS</h2>
 <p>One app that we recommend is SmallFish:<br />
 <a href="https://itunes.apple.com/us/app/smallfish-chess-for-iphone/id675049147?mt=8"><img src="/svg/app-store.svg" width="200px" class="sfm-store-button"></a>
 </p>
-<h2>Android</h2>
-<p>One app that we recommend is DroidFish:<br />
-<a href="https://play.google.com/store/apps/details?id=org.petero.droidfish"><img src="/svg/google-play.svg" width="160px" class="sfm-store-button"></a>
-<p>If you want the engine only, you can binaries: <a href="/files/stockfish_13_android.zip">Android, version 13 (zip)</a>.</p>
+
+<h2>Linux</h2>
+<a href="/download/linux">See all Linux binaries</a>
+
+
 <hr>
 <h2>Source Code</h2>
 <ul class="small-block-grid-2">

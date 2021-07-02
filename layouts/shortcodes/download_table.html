@@ -1,0 +1,17 @@
+
+{{ $os := .Get 0 }}
+{{ $files := getJSON "assets/" $os }}
+
+<table width="100%">
+    <tr>
+        <th>Instruction set / CPU</th>
+        <th></th>
+    </tr>
+    {{ range $files.files }}
+    <tr>
+        <td><b>{{ .arch }}</b>{{ if .wiki_url }}: recommended <a href="{{ .wiki_url }}">for these CPUs</a>{{ end }}</td>
+        <td><a href="{{ .file }}" class="radius success button">Download</a></td>
+    </tr>
+    {{ end }}
+
+</table>
