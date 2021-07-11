@@ -12,9 +12,9 @@
 			"tags": ["win10_fast"]
 		},
 		{
-			"arch": "SSE4.1 + POPCNT",
+			"arch": "POPCNT",
 			"wiki_url": "https://en.wikipedia.org/wiki/SSE4#Supporting_CPUs",
-			"file": "/files/stockfish_14_win_x64_modern.zip",
+			"file": "/files/stockfish_14_win_x64_popcnt.zip",
 			"tags": ["win10_compat", "lt_win10_fast"]
 		},
 		{
