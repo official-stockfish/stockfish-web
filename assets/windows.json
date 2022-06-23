@@ -3,33 +3,29 @@
 		{
 			"arch": "BMI2",
 			"wiki_url": "https://en.wikipedia.org/wiki/Bit_manipulation_instruction_set#Supporting_CPUs",
-			"file": "/files/stockfish_14.1_win_x64_bmi2.zip"
+			"file": "/files/stockfish_15_win_x64_bmi2.zip"
 		},
 		{
 			"arch": "AVX2",
 			"wiki_url": "https://en.wikipedia.org/wiki/Advanced_Vector_Extensions#CPUs_with_AVX2",
-			"file": "/files/stockfish_14.1_win_x64_avx2.zip",
+			"file": "/files/stockfish_15_win_x64_avx2.zip",
 			"tags": ["win10_fast"]
 		},
 		{
 			"arch": "POPCNT",
 			"wiki_url": "https://en.wikipedia.org/wiki/SSE4#Supporting_CPUs",
-			"file": "/files/stockfish_14.1_win_x64_popcnt.zip",
+			"file": "/files/stockfish_15_win_x64_popcnt.zip",
 			"tags": ["win10_compat", "lt_win10_fast"]
 		},
 		{
 			"arch": "SSSE3",
 			"wiki_url": "https://en.wikipedia.org/wiki/SSSE3#CPUs_with_SSSE3",
-			"file": "/files/stockfish_14.1_win_x64_ssse.zip"
+			"file": "/files/stockfish_15_win_x64_ssse.zip"
 		},
 		{
 			"arch": "64-bit",
-			"file": "/files/stockfish_14.1_win_x64.zip",
+			"file": "/files/stockfish_15_win_x64.zip",
 			"tags": ["lt_win10_compat"]
-		},
-		{
-			"arch": "32-bit",
-			"file": "/files/stockfish_14.1_win_32bit.zip"
 		}
 	]
 }
