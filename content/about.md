@@ -25,7 +25,7 @@ Glaurung 2.1 code and introduced Stockfish 1.0. Tord and Joona Kiiski
 joined the Stockfish project and the Glaurung project slowly faded away.
 Meanwhile, Stockfish quickly rose to become the strongest open source
 chess engine, with frequent updates every few months. Today, it remains
-[one of the strongest engines](https://en.wikipedia.org/wiki/Top_Chess_Engine_Championship#Tournament_results_%28TCEC%29) in the world.
+[one of the strongest engines](https://en.wikipedia.org/wiki/Top_Chess_Engine_Championship#Tournament_results) in the world.
 
 ## About this website
 
