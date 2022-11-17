@@ -1,9 +1,9 @@
 [
   {
     "title": "Strong",
-    "description": "Stockfish is a 11-time winner of the Top Chess Engine Championship.",
-    "url": "https://en.wikipedia.org/wiki/Top_Chess_Engine_Championship#Tournament_results_(TCEC)",
-    "button_text": "View TCEC results"
+    "description": "Stockfish is a 13-time winner of the Top Chess Engine Championship.",
+    "url": "https://en.wikipedia.org/wiki/Stockfish_(chess)#Competition_results",
+    "button_text": "View Competition Results"
   },
   {
     "title": "Open Source",
