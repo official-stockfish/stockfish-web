@@ -30,5 +30,5 @@ GitHub](https://github.com/official-stockfish/Stockfish)
 
 Places you can find other Stockfish developers:
 
+- [Discord](https://discord.gg/GWDRS3kU6R)
 - [FishCooking forum](https://groups.google.com/forum/?fromgroups=#!forum/fishcooking)
-- [Discord](https://discord.gg/aefaxmq)

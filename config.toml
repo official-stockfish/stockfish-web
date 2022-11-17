@@ -30,7 +30,7 @@ title = "Stockfish - Open Source Chess Engine"
     summary_large_truncate = 120  # How many characters to include in the summary of the team bios (large layout) before truncating
 
   [params.footer]
-    copyright_text = 'Stockfish is licensed under the GPL license. Website © 2010-2021 Daylen Yang. Stockfish icon by Klein Maetschke.'
+    copyright_text = 'Stockfish is licensed under the GPL license. Website © 2010-2022 Daylen Yang. Stockfish icon by Klein Maetschke.'
 
 [menu]
   # Main Menu

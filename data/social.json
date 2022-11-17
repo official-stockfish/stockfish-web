@@ -8,5 +8,10 @@
         "name": "Twitter",
         "link": "https://twitter.com/stockfishchess",
         "image": "images/social/twitter.svg"
+    },
+    {
+        "name": "Discord",
+        "link": "https://discord.gg/GWDRS3kU6R",
+        "image": "images/social/discord.svg"
     }
 ]
