@@ -10,6 +10,9 @@
   <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
+  <link href="/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+  <link href="/fontawesome/css/regular.min.css" rel="stylesheet">
+
   <!-- CSS-->
   {{ if .Site.IsServer }}
   {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
