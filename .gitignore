@@ -5,4 +5,4 @@ public
 resources
 
 # binaries
-static/files/
+static/files/*.zip
