@@ -3,7 +3,7 @@ title: "Stockfish 16"
 date: 2023-06-30T00:00:00-08:00
 ---
 
-A new major release of Stockfish is now available at stockfishchess.org/download
+A new major release of Stockfish is now available at [stockfishchess.org/download](/download).
 
 ## Quality of chess play
 
