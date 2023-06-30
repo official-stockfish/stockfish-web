@@ -1,25 +1,20 @@
 {
 	"files": [
 		{
-			"arch": "BMI2",
-			"wiki_url": "https://en.wikipedia.org/wiki/Bit_manipulation_instruction_set#Supporting_CPUs",
-			"file": "https://files.stockfishchess.org/files/stockfish_15.1_win_x64_bmi2.zip"
-		},
-		{
 			"arch": "AVX2",
 			"wiki_url": "https://en.wikipedia.org/wiki/Advanced_Vector_Extensions#CPUs_with_AVX2",
-			"file": "https://files.stockfishchess.org/files/stockfish_15.1_win_x64_avx2.zip",
+			"file": "https://github.com/official-stockfish/Stockfish/releases/download/stockfish-dev-20230622-a49b3ba7/stockfish-windows-x86-64-avx2.zip",
 			"tags": ["win10_fast"]
 		},
 		{
 			"arch": "POPCNT",
 			"wiki_url": "https://en.wikipedia.org/wiki/SSE4#Supporting_CPUs",
-			"file": "https://files.stockfishchess.org/files/stockfish_15.1_win_x64_popcnt.zip",
+			"file": "https://github.com/official-stockfish/Stockfish/releases/download/stockfish-dev-20230622-a49b3ba7/stockfish-windows-x86-64-modern.zip",
 			"tags": ["win10_compat", "lt_win10_fast"]
 		},
 		{
 			"arch": "64-bit",
-			"file": "https://files.stockfishchess.org/files/stockfish_15.1_win_x64.zip",
+			"file": "https://github.com/official-stockfish/Stockfish/releases/download/stockfish-dev-20230622-a49b3ba7/stockfish-windows-x86-64.zip",
 			"tags": ["lt_win10_compat"]
 		}
 	]
