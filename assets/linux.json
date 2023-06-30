@@ -3,16 +3,16 @@
 		{
 			"arch": "AVX2",
 			"wiki_url": "https://en.wikipedia.org/wiki/Advanced_Vector_Extensions#CPUs_with_AVX2",
-			"file": "https://github.com/official-stockfish/Stockfish/releases/download/stockfish-dev-20230622-a49b3ba7/stockfish-ubuntu-x86-64-avx2.tar"
+			"file": "https://github.com/official-stockfish/Stockfish/releases/download/sf_16/stockfish-ubuntu-x86-64-avx2.tar"
 		},
 		{
 			"arch": "POPCNT",
 			"wiki_url": "https://en.wikipedia.org/wiki/SSE4#Supporting_CPUs",
-			"file": "https://github.com/official-stockfish/Stockfish/releases/download/stockfish-dev-20230622-a49b3ba7/stockfish-ubuntu-x86-64-modern.tar"
+			"file": "https://github.com/official-stockfish/Stockfish/releases/download/sf_16/stockfish-ubuntu-x86-64-modern.tar"
 		},
 		{
 			"arch": "64-bit",
-			"file": "https://github.com/official-stockfish/Stockfish/releases/download/stockfish-dev-20230622-a49b3ba7/stockfish-ubuntu-x86-64.tar"
+			"file": "https://github.com/official-stockfish/Stockfish/releases/download/sf_16/stockfish-ubuntu-x86-64.tar"
 		}
 	]
 }
