@@ -2,13 +2,13 @@
 title: 'About'
 ---
 
-
 ## Get Notified
 
-Get notified about new releases by [following us on
-Twitter](http://twitter.com/stockfishchess), [liking us on
-Facebook](http://facebook.com/stockfishchess), or [reading our
-blog](/blog/).
+Get notified about new releases by
+[following us on Twitter](http://twitter.com/stockfishchess),
+joining our [Discord](https://discord.gg/GWDRS3kU6R),
+watching us on [GitHub](https://github.com/official-stockfish/Stockfish),
+or [reading our blog](/blog/).
 
 ## Engine Authors
 
@@ -24,12 +24,13 @@ Glaurung 2.1 code and introduced Stockfish 1.0. Tord and Joona Kiiski
 joined the Stockfish project and the Glaurung project slowly faded away.
 Meanwhile, Stockfish quickly rose to become the strongest open source
 chess engine, with frequent updates every few months. Today, it remains
-[one of the strongest engines](https://en.wikipedia.org/wiki/Top_Chess_Engine_Championship#Tournament_results) in the world.
+[one of the strongest engines](https://en.wikipedia.org/wiki/Stockfish_(chess)#Competition_results) in the world.
 
 ## About this website
 
-This website was built by [Daylen Yang](http://daylen.com/). The
-Stockfish icon was designed by [Klein Maetschke](http://iamkle.in).
+This website was built by [Daylen Yang](http://daylen.com/) and its source code
+in on [Github](https://github.com/daylen/stockfish-web). The Stockfish icon was
+designed by [Klein Maetschke](http://iamkle.in).
 
 ## About the GPL
 
