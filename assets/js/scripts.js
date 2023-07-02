@@ -1,6 +1,6 @@
-var body = document.querySelector('body')
-var menuTrigger = document.querySelector('#toggle-main-menu-mobile');
-var menuContainer = document.querySelector('#main-menu-mobile');
+const body = document.querySelector('body')
+const menuTrigger = document.querySelector('#toggle-main-menu-mobile');
+const menuContainer = document.querySelector('#main-menu-mobile');
 
 menuTrigger.onclick = function() {
     menuContainer.classList.toggle('open');
@@ -25,11 +25,11 @@ function IsOldWindows() {
 }
 
 function GetFastAndSlow(json, old_windows) {
-    var fast = {};
-    var slow = {};
-    console.log(json.files);
-    for (var obj of json.files) {
-        console.log(obj);
+    let fast = {};
+    let slow = {};
+    // console.log(json.files);
+    for (let obj of json.files) {
+        // console.log(obj);
         if (obj.tags && obj.tags.includes( (old_windows ? 'lt_' : '') + 'win10_fast' )) {
             fast = obj;
         }
@@ -40,16 +40,25 @@ function GetFastAndSlow(json, old_windows) {
     return [fast, slow];
 }
 
-var windows_table = document.getElementById('windows-table');
+const windows_table = document.getElementById('windows-table');
 if (windows_table) {
     fetch('/windows.json?a').then(response => response.json()).then(data => {
-        console.log(data);
-        var fast_and_slow = GetFastAndSlow(data, IsOldWindows());
-        console.log(fast_and_slow);
-        document.getElementById('windows-fast-button').href = fast_and_slow[0].file;
-        document.getElementById('windows-fast-text').innerHTML = fast_and_slow[0].arch;
-        document.getElementById('windows-compat-button').href = fast_and_slow[1].file;
-        document.getElementById('windows-compat-text').innerHTML = fast_and_slow[1].arch;
+        // console.log(data);
+        const fast_and_slow = GetFastAndSlow(data, IsOldWindows());
+        // console.log(fast_and_slow);
+        windows_table.querySelector('.fast').href = fast_and_slow[0].file;
+        windows_table.querySelector('.fast span').textContent = fast_and_slow[0].arch;
+        windows_table.querySelector('.compat').href = fast_and_slow[1].file;
+        windows_table.querySelector('.compat span').textContent = fast_and_slow[1].arch;
+    })
+}
 
+const linux_table = document.getElementById('linux-table');
+if (linux_table) {
+    fetch('/linux.json?a').then(response => response.json()).then(data => {
+        linux_table.querySelector('.fast').href = data.files[0].file;
+        linux_table.querySelector('.fast span').textContent = data.files[0].arch;
+        linux_table.querySelector('.compat').href = data.files[1].file;
+        linux_table.querySelector('.compat span').textContent = data.files[1].arch;
     })
 }
