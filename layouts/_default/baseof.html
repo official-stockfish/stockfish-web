@@ -38,6 +38,8 @@
   <!-- dummy to force publishing of windows.json -->
   {{ $windows_json := resources.Get "windows.json" }}
   {{ $windows_json_link := $windows_json.RelPermalink }}
+  {{ $linux_json := resources.Get "linux.json" }}
+  {{ $linux_json_link := $linux_json.RelPermalink }}
 
   {{ block "footer_js" . }}
   {{ end }}
