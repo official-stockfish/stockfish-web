@@ -1,5 +1,5 @@
 ---
-title: 'Home'
+title: "Stockfish - Open Source Chess Engine"
 intro_image: "images/logo/icon_512x512@2x.png"
 ---
 

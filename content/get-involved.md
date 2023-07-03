@@ -1,5 +1,6 @@
 ---
 title: "Get Involved"
+description: "Whether you are a programming wizard or just a fan, there’s something you can do to help make Stockfish even better."
 date: 2021-02-21T22:11:19-08:00
 ---
 

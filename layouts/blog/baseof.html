@@ -6,7 +6,25 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>{{ block "title" . }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {{ block "meta_tags" . }}{{end}}
+  {{ block "meta_tags" . }}
+  <meta name="description" content="{{ .Description | default .Site.Params.homepage_meta_tags.meta_description }}"/>
+
+  <meta name="twitter:image:src" content="{{ .Site.Params.homepage_meta_tags.meta_og_image }}" />
+  <meta name="twitter:site" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_site }}" />
+  <meta name="twitter:card" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_card }}" />
+  <meta name="twitter:title" content="{{ .Title | default .Site.Params.homepage_meta_tags.meta_og_title }}" />
+  <meta name="twitter:description" content="{{ .Description | default .Site.Params.homepage_meta_tags.meta_description }}" />
+
+  <meta property="og:image" content="{{ .Site.Params.homepage_meta_tags.meta_og_image }}" />
+  <meta property="og:image:alt" content="{{ .Description | default .Site.Params.homepage_meta_tags.meta_description }}" />
+  <meta property="og:site_name" content="{{ .Site.Params.homepage_meta_tags.meta_og_site_name }}" />
+  <meta property="og:type" content="{{ .Site.Params.homepage_meta_tags.meta_og_type }}" />
+  <meta property="og:title" content="{{ .Title | default .Site.Params.homepage_meta_tags.meta_og_title }}" />
+  <meta property="og:url" content="{{ .Site.Params.homepage_meta_tags.meta_og_url }}" />
+  <meta property="og:description" content="{{ .Description | default .Site.Params.homepage_meta_tags.meta_description }}" />
+
+  <meta name="theme-color" content="{{ .Site.Params.homepage_meta_tags.meta_theme_color }}" />
+  {{ end }}
   <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 

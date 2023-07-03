@@ -7,9 +7,16 @@
     max-width: unset;
   }
   a {
-    display: block;
-    width: 100%;
-    height: 100%;
+    display: flex;
+    align-items: center;
+    span {
+      color: $black;
+      margin-left: 4px;
+      font-family: $font-family-heading;
+      font-size: 24px;
+      font-weight: 700;
+      vertical-align: middle;
+    }
   }
 }
 .logo-mobile {
