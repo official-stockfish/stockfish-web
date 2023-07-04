@@ -1,7 +1,4 @@
 .content {
-  a {
-    text-decoration: underline;
-  }
   .button {
     text-decoration: none;
   }
@@ -12,7 +9,7 @@
     margin-bottom: 20px;
   }
   strong {
-    font-width: bold;
+    font-weight: bold;
   }
   em {
     font-style: italic;
@@ -77,8 +74,11 @@
     th,
     td {
       padding: 5px;
-      vertical-align: top;
+      vertical-align: middle;
       border-top: 1px solid $white-offset;
+      &:last-child {
+        text-align: end;
+      }
     }
     thead th {
       vertical-align: bottom;

@@ -12,19 +12,21 @@ title = "Stockfish - Open Source Chess Engine"
   [params.logo]
     mobile = "images/logo/icon_128x128@2x.png"
     desktop = "images/logo/icon_128x128@2x.png"
-    desktop_height = "36px"
+    desktop_height = "36"
     alt = "Stockfish Logo"
 
   [params.homepage_meta_tags]
-    meta_description = "Stockfish is a powerful and open source chess engine."
-    # meta_og_title = "Hugo Serif Theme"
-    # meta_og_type = "website"
-    # meta_og_url = "https://hugo-serif.netlify.app"
-    # meta_og_image = "https://raw.githubusercontent.com/JugglerX/hugo-serif-theme/master/images/tn.png"
-    # meta_og_description = "Serif is a modern business theme for Hugo. It contains content types for the archetypical business website. The theme is fully responsive, blazing fast and artfully illustrated."
-    # meta_twitter_card = "summary"
-    # meta_twitter_site = "@zerostaticio"
-    # meta_twitter_creator = "@zerostaticio"
+    meta_description = "Stockfish is a strong and open source chess engine."
+
+    meta_twitter_site = "@stockfishchess"
+    meta_twitter_card = "summary"
+
+    meta_og_site_name = "Stockfish"
+    meta_og_type = "website"
+    meta_og_url = "https://stockfishchess.org/"
+    meta_og_image = "https://stockfishchess.org/images/logo/icon_128x128@2x.png"
+
+    meta_theme_color = "#2b6e44"
 
   [params.team]
     summary_large_truncate = 120  # How many characters to include in the summary of the team bios (large layout) before truncating
