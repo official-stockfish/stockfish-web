@@ -13,5 +13,10 @@
         "name": "Discord",
         "link": "https://discord.gg/GWDRS3kU6R",
         "image": "images/social/discord.svg"
+    },
+    {
+        "name": "RSS",
+        "link": "/blog/index.xml",
+        "image": "images/social/rss.svg"
     }
 ]
