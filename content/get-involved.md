@@ -14,7 +14,7 @@ do is install the Fishtest worker, and your computer will automatically
 start playing chess games using future and current versions of the
 engine.
 
-- [Install Fishtest worker](https://github.com/glinscott/fishtest/wiki/Running-the-worker)
+- [Install Fishtest worker](https://github.com/official-stockfish/fishtest/wiki/Running-the-worker)
 - [Fishtest Dashboard](http://tests.stockfishchess.org/tests)
 
 ## Write Code
@@ -24,7 +24,7 @@ strength? Fork the project on GitHub and commit away. Then use Fishtest
 to test your change.
 
 - [Stockfish on GitHub](https://github.com/official-stockfish/Stockfish)
-- [How to create a test](https://github.com/glinscott/fishtest/wiki/Creating-my-first-test)
+- [How to create a test](https://github.com/official-stockfish/fishtest/wiki/Creating-my-first-test)
 
 ## Discuss
 
