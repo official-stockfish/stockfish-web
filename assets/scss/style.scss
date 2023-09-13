@@ -1,15 +1,23 @@
 // Colors
-$primary: #43AC6A;
+$green1: hsl(142, 44%, 15%);
+$green2: hsl(142, 44%, 25%);
+$green3: hsl(142, 44%, 30%);
+$green4: hsl(142, 44%, 37%);
+$green5: hsl(142, 44%, 43%);
+$green6: hsl(142, 44%, 47%);
+$green7: hsl(142, 44%, 55%);
+
+$primary: $green6;
 $secondary: #f88379;
 $black: #2f2f41;
 $white: #ffffff;
-$white-offset: #e7f6ed;
-$steel: #5C5A5A;
+$white-offset: #e1e1e1;
+$steel: $white-offset;
 
 // Links
-$link-color: $primary;
+$link-color: lighten($primary, 10%);
 $link-decoration: none;
-$link-hover-color: lighten($primary, 20%);
+$link-hover-color: $green6;
 $link-hover-decoration: underline;
 
 // Fonts
@@ -19,9 +27,9 @@ $font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI",
 $font-family-heading: 'Playfair Display', serif, -apple-system;
 
 // Footer
-$footer-background-color: $primary;
+$footer-background-color: $green4;
 $footer-text-color: $white;
-$sub-footer-background-color: darken($primary, 10%);
+$sub-footer-background-color: $green3;
 $sub-footer-text-color: $white;
 
 // Bootstrap

@@ -1,11 +1,9 @@
 .header {
-  color: $primary;
-  background-color: #ffffff;
+  background-color: $green3;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // box-shadow: 0 1px 15px rgba(50, 50, 93, 0.2);
-  border-bottom: 1px solid $white-offset;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2);
   padding: 10px 0px;
   .container {
     display: flex;

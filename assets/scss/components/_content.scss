@@ -33,7 +33,6 @@
     font-weight: bold;
     line-height: 1.4;
     margin-top: 30px;
-    color: $primary;
   }
   h3 {
     font-family: $font-family-base;
@@ -64,30 +63,33 @@
   }
   hr {
     border: none;
-    border-bottom: 1px solid $white-offset;
+    border-bottom: 1px solid $green3;
   }
   table {
     width: 100%;
-    border-bottom: 1px solid $white-offset;
+    border-bottom: 1px solid $green3;
     margin-top: 30px;
     margin-bottom: 30px;
     th,
     td {
       padding: 5px;
       vertical-align: middle;
-      border-top: 1px solid $white-offset;
+      border-top: 1px solid $green3;
       &:last-child {
         text-align: end;
       }
     }
+    tr:nth-child(even) {
+      background-color: $green2;
+    }
     thead th {
       vertical-align: bottom;
-      border-bottom: 1px solid $white-offset;
+      border-bottom: 1px solid $green3;
       text-align: left;
       font-weight: bold;
     }
     tbody + tbody {
-      border-top: 1px solid $white-offset;
+      border-top: 1px solid $green3;
     }
   }
   blockquote {
