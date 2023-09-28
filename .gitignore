@@ -3,6 +3,7 @@ node_modules
 .idea
 public
 resources
+.hugo_build.lock
 
 # binaries
 static/files/*.zip
