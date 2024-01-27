@@ -58,7 +58,7 @@ title = "Stockfish - Open Source Chess Engine"
 
   [[menu.main]]
     name = "Docs"
-    url = "https://disservin.github.io/stockfish-docs/pages/Home.html"
+    url = "https://disservin.github.io/stockfish-docs/stockfish-wiki/Home.html"
       weight = 6
 
   [[menu.main]]
