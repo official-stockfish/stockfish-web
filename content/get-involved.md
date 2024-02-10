@@ -24,7 +24,7 @@ strength? Fork the project on GitHub and commit away. Then use Fishtest
 to test your change.
 
 - [Stockfish on GitHub](https://github.com/official-stockfish/Stockfish)
-- [How to create a test](https://github.com/official-stockfish/fishtest/wiki/Creating-my-first-test)
+- [Participating in the project](https://github.com/official-stockfish/Stockfish/wiki/Developers#participating-in-the-project)
 
 ## Discuss
 
