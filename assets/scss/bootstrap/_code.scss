@@ -3,6 +3,9 @@ code {
   @include font-size($code-font-size);
   color: $code-color;
   word-wrap: break-word;
+  background-color: $code-bg;
+  border-radius: $code-border-radius;
+  padding: $code-padding;
 
   // Streamline the style when inside anchors to avoid broken underline and more
   a > & {
@@ -32,12 +35,17 @@ pre {
   display: block;
   @include font-size($code-font-size);
   color: $pre-color;
+  padding: $pre-padding;
+  background-color: $code-bg;
+  border-radius: $code-border-radius;
 
   // Account for some code outputs that place code tags in pre tags
   code {
     @include font-size(inherit);
     color: inherit;
     word-break: normal;
+    background-color: initial;
+    padding: initial;
   }
 }
 

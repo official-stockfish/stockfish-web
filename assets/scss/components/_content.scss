@@ -80,7 +80,7 @@
       }
     }
     tr:nth-child(even) {
-      background-color: $green2;
+      background-color: rgba($green2, 0.4);
     }
     thead th {
       vertical-align: bottom;

@@ -1116,9 +1116,12 @@ $close-text-shadow:                 0 1px 0 $white !default;
 
 
 // Code
+$code-bg:                           rgba($green2, 0.4);
+$code-border-radius:                $border-radius;
 
-$code-font-size:                    87.5% !default;
-$code-color:                        $pink !default;
+$code-font-size:                    85% !default;
+$code-color:                        $white !default;
+$code-padding:                      0.2em;
 
 $kbd-padding-y:                     .2rem !default;
 $kbd-padding-x:                     .4rem !default;
@@ -1126,8 +1129,9 @@ $kbd-font-size:                     $code-font-size !default;
 $kbd-color:                         $white !default;
 $kbd-bg:                            $gray-900 !default;
 
-$pre-color:                         $gray-900 !default;
+$pre-color:                         $white !default;
 $pre-scrollable-max-height:         340px !default;
+$pre-padding:                       1rem;
 
 
 // Utilities
