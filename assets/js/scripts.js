@@ -40,15 +40,17 @@ function GetFastAndSlow(json, old_windows) {
     return [fast, slow];
 }
 
+const baseDownloadLink = "https://github.com/official-stockfish/Stockfish/releases/download/sf_16.1/";
+
 const windows_table = document.getElementById('windows-table');
 if (windows_table) {
     fetch('/windows.json?a').then(response => response.json()).then(data => {
         // console.log(data);
         const fast_and_slow = GetFastAndSlow(data, IsOldWindows());
         // console.log(fast_and_slow);
-        windows_table.querySelector('.fast').href = fast_and_slow[0].file;
+        windows_table.querySelector('.fast').href = baseDownloadLink + fast_and_slow[0].file;
         windows_table.querySelector('.fast span').textContent = fast_and_slow[0].arch;
-        windows_table.querySelector('.compat').href = fast_and_slow[1].file;
+        windows_table.querySelector('.compat').href = baseDownloadLink + fast_and_slow[1].file;
         windows_table.querySelector('.compat span').textContent = fast_and_slow[1].arch;
     })
 }
@@ -56,9 +58,27 @@ if (windows_table) {
 const linux_table = document.getElementById('linux-table');
 if (linux_table) {
     fetch('/linux.json?a').then(response => response.json()).then(data => {
-        linux_table.querySelector('.fast').href = data.files[0].file;
-        linux_table.querySelector('.fast span').textContent = data.files[0].arch;
-        linux_table.querySelector('.compat').href = data.files[1].file;
-        linux_table.querySelector('.compat span').textContent = data.files[1].arch;
+        const fastFile = data.files.find(file => file.tags && file.tags.includes('fast'));
+        const compatFile = data.files.find(file => file.tags && file.tags.includes('compat'));
+
+        linux_table.querySelector('.fast').href = fastFile ? baseDownloadLink + fastFile.file : '';
+        linux_table.querySelector('.fast span').textContent = fastFile ? fastFile.arch : '';
+
+        linux_table.querySelector('.compat').href = compatFile ? baseDownloadLink + compatFile.file : '';
+        linux_table.querySelector('.compat span').textContent = compatFile ? compatFile.arch : '';
+    })
+}
+
+const arm_table = document.getElementById('arm-table');
+if (arm_table) {
+    fetch('/arm.json?a').then(response => response.json()).then(data => {
+        const fastFile = data.files.find(file => file.tags && file.tags.includes('fast'));
+        const compatFile = data.files.find(file => file.tags && file.tags.includes('compat'));
+
+        arm_table.querySelector('.fast').href = fastFile ? baseDownloadLink + fastFile.file : '';
+        arm_table.querySelector('.fast span').textContent = fastFile ? fastFile.arch : '';
+
+        arm_table.querySelector('.compat').href = compatFile ? baseDownloadLink + compatFile.file : '';
+        arm_table.querySelector('.compat span').textContent = compatFile ? compatFile.arch : '';
     })
 }

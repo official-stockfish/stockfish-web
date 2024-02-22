@@ -59,6 +59,10 @@
   {{ $windows_json_link := $windows_json.RelPermalink }}
   {{ $linux_json := resources.Get "linux.json" }}
   {{ $linux_json_link := $linux_json.RelPermalink }}
+  {{ $macos_json := resources.Get "macos.json" }}
+  {{ $macos_json_link := $macos_json.RelPermalink }}
+  {{ $arm_json := resources.Get "arm.json" }}
+  {{ $arm_json_link := $arm_json.RelPermalink }}
 
   {{ block "footer_js" . }}
   {{ end }}

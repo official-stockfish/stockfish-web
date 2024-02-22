@@ -1,6 +1,7 @@
 
 {{ $os := .Get 0 }}
 {{ $files := getJSON "assets/" $os }}
+{{ $baseDownloadLink := "https://github.com/official-stockfish/Stockfish/releases/download/sf_16.1/" }}
 
 <table>
     <thead>
@@ -13,7 +14,7 @@
         {{ range $files.files }}
         <tr>
             <td><b>{{ .arch }}</b>{{ if .wiki_url }}: recommended <a href="{{ .wiki_url }}">for these CPUs</a>{{ end }}</td>
-            <td><a href="{{ .file }}" class="radius success button">Download</a></td>
+            <td><a href="{{ $baseDownloadLink }}{{ .file }}" class="radius success button">Download</a></td>
         </tr>
         {{ end }}
     </tbody>
