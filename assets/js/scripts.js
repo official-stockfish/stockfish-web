@@ -27,7 +27,7 @@ function getFastAndSlow(json, old_windows) {
     return [fast, slow];
 }
 
-const baseDownloadLink = "https://github.com/official-stockfish/Stockfish/releases/download/sf_16.1/";
+const baseDownloadLink = "https://github.com/official-stockfish/Stockfish/releases/latest/download/";
 
 const windowsTable = document.getElementById('windows-table');
 if (windowsTable) {
