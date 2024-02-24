@@ -1,18 +1,40 @@
 {
 	"files": [
 		{
+			"arch": "VNNI512",
+			"wiki_url": "https://en.wikipedia.org/wiki/Advanced_Vector_Extensions#CPUs_with_AVX-VNNI",
+			"file": "stockfish-ubuntu-x86-64-vnni512.zip"
+		},
+		{
+			"arch": "VNNI256",
+			"wiki_url": "https://en.wikipedia.org/wiki/Advanced_Vector_Extensions#CPUs_with_AVX-VNNI",
+			"file": "stockfish-ubuntu-x86-64-vnni256.zip"
+		},
+		{
+			"arch": "AVX512",
+			"wiki_url": "https://en.wikipedia.org/wiki/AVX-512#CPUs_with_AVX-512",
+			"file": "stockfish-ubuntu-x86-64-avx512.zip"
+		},
+		{
+			"arch": "BMI2",
+			"wiki_url": "https://en.wikipedia.org/wiki/X86_Bit_manipulation_instruction_set#Supporting_CPUs",
+			"file": "stockfish-ubuntu-x86-64-bmi2.zip"
+		},
+		{
 			"arch": "AVX2",
 			"wiki_url": "https://en.wikipedia.org/wiki/Advanced_Vector_Extensions#CPUs_with_AVX2",
-			"file": "https://github.com/official-stockfish/Stockfish/releases/download/sf_16/stockfish-ubuntu-x86-64-avx2.tar"
+			"file": "stockfish-ubuntu-x86-64-avx2.tar",
+			"tags": ["fast"]
 		},
 		{
 			"arch": "POPCNT",
 			"wiki_url": "https://en.wikipedia.org/wiki/SSE4#Supporting_CPUs",
-			"file": "https://github.com/official-stockfish/Stockfish/releases/download/sf_16/stockfish-ubuntu-x86-64-modern.tar"
+			"file": "stockfish-ubuntu-x86-64-sse41-popcnt.tar",
+			"tags": ["compat"]
 		},
 		{
 			"arch": "64-bit",
-			"file": "https://github.com/official-stockfish/Stockfish/releases/download/sf_16/stockfish-ubuntu-x86-64.tar"
+			"file": "stockfish-ubuntu-x86-64.tar"
 		}
 	]
 }
