@@ -2,7 +2,14 @@
   width: 100%;
   height: auto;
   margin-top: -40px;
+  transition: transform 0.5s;
 }
+
+.intro-image:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+
 .intro-image-absolute {
   max-width: none;
 
@@ -27,6 +34,7 @@
     width: 850px;
   }
 }
+
 .intro-image-hide-mobile {
   display: none;
   @include media-breakpoint-up(md) {
