@@ -29,7 +29,7 @@ $font-family-heading: 'Playfair Display', serif, -apple-system;
 // Footer
 
 $footer-background-color: $green2;
-$footer-text-color: #c2c2c2;
+$footer-text-color: $white-offset;
 
 // Bootstrap
 @import 'bootstrap-variables';
@@ -100,4 +100,11 @@ body:after {
     background-image: url('/images/grid.svg');
     min-height: 90vh;
     background-size: 500px 500px;
+}
+.grid::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 75%, $green1 100%);
+  pointer-events: none;
 }
