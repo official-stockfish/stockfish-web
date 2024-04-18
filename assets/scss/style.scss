@@ -27,10 +27,9 @@ $font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI",
 $font-family-heading: 'Playfair Display', serif, -apple-system;
 
 // Footer
-$footer-background-color: $green4;
-$footer-text-color: $white;
-$sub-footer-background-color: $green3;
-$sub-footer-text-color: $white;
+
+$footer-background-color: $green2;
+$footer-text-color: #c2c2c2;
 
 // Bootstrap
 @import 'bootstrap-variables';
@@ -47,7 +46,6 @@ $sub-footer-text-color: $white;
 @import 'components/page';
 @import 'components/header';
 @import 'components/footer';
-@import 'components/sub-footer';
 @import 'components/logo';
 @import 'components/main-menu';
 @import 'components/main-menu-mobile';
@@ -60,6 +58,7 @@ $sub-footer-text-color: $white;
 @import 'components/strip';
 @import 'components/feature';
 @import 'components/social';
+@import 'components/horizontal-line';
 
 // Pages
 @import 'pages/home';
@@ -96,3 +95,9 @@ body:after {
   }
 }
 {{ end }}
+
+.grid {
+    background-image: url('/images/grid.svg');
+    min-height: 90vh;
+    background-size: 500px 500px;
+}
