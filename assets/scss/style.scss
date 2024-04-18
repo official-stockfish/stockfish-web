@@ -97,14 +97,17 @@ body:after {
 {{ end }}
 
 .grid {
-    background-image: url('/images/grid.svg');
-    min-height: 90vh;
-    background-size: 500px 500px;
+  position: relative;
+  background-image: url('/images/grid.svg');
+  min-height: 90vh;
+  background-size: 500px 500px;
 }
 .grid::before {
   content: "";
   position: absolute;
-  inset: 0;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
   background: linear-gradient(to bottom, transparent 75%, $green1 100%);
   pointer-events: none;
 }
