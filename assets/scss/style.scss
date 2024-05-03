@@ -21,10 +21,10 @@ $link-hover-color: $green6;
 $link-hover-decoration: underline;
 
 // Fonts
-$font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI",
+$font-family-base: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
                Roboto, Oxygen-Sans, Ubuntu, Cantarell,
                "Helvetica Neue", sans-serif;
-$font-family-heading: 'Playfair Display', serif, -apple-system;
+$font-family-heading: Inter, serif, -apple-system;
 
 // Footer
 
@@ -110,4 +110,13 @@ body:after {
   bottom: 0;
   background: linear-gradient(to bottom, transparent 75%, $green1 100%);
   pointer-events: none;
+}
+
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+  
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
 }

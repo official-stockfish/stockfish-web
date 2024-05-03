@@ -27,8 +27,9 @@
   {{ end }}
   <link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | relURL }}">
   <link rel="alternate" type="application/rss+xml" title="Stockfish Blog RSS Feed" href="/blog/index.xml">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  
   <!-- CSS-->
   {{ if .Site.IsServer }}
   {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
