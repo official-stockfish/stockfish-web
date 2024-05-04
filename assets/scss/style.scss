@@ -1,4 +1,5 @@
 // Colors
+$body-bg: #1b1b1f;
 $green1: hsl(142, 44%, 15%);
 $green2: hsl(142, 44%, 25%);
 $green3: hsl(142, 44%, 30%);
@@ -108,7 +109,7 @@ body:after {
   height: 100%;
   width: 100%;
   bottom: 0;
-  background: linear-gradient(to bottom, transparent 75%, $green1 100%);
+  background: linear-gradient(to bottom, transparent 75%, $body-bg 100%);
   pointer-events: none;
 }
 

@@ -4,36 +4,58 @@
   align-items: center;
   padding-top: 60px;
   overflow: hidden;
+  text-align: center;
   @include media-breakpoint-up(md) {
-    padding-top: 140px;
+    text-align: initial;
   }
   h1 {
-    font-size: 42px;
-    font-weight: 600;
+    font-size: 32px;
+    font-weight: 700;
     line-height: 1.2;
-    letter-spacing: -1.935px;
     @include media-breakpoint-up(md) {
-      width: 80%;
       font-size: 48px;
     }
     @include media-breakpoint-up(lg) {
-      font-size: 50px;
+      font-size: 56px;
     }
   }
   h2 {
-    width: 80%;
     font-size: 1.2rem;
     line-height: 1.4;
     margin-bottom: 30px;
     font-family: $font-family-base;
   }
-  p {
-    font-size: 1.2rem;
-    font-weight: light;
+  .tagline p {
+    font-size: 18px;
+    font-weight: 500;
     line-height: 1.5;
-    color: $steel;
+    color: $gray-500;
     @include media-breakpoint-up(md) {
-      width: 80%;
+      font-size: 20px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 24px;
+    }
+  }
+  .name {
+    color: transparent;
+  }
+  .clip {
+    animation: title-gradient 5s ease infinite;
+    background-size: 400% 400%;
+    background-image: linear-gradient(-45deg, $green7, $green4, $green7, $green5, $green4, $green5, $green7, $green4);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  @keyframes title-gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    to {
+      background-position: 0% 50%;
     }
   }
 }

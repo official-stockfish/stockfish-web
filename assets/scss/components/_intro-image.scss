@@ -1,13 +1,75 @@
-.intro-image {
-  width: 100%;
-  height: auto;
-  margin-top: -40px;
-  transition: transform 0.5s;
-}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
 
-.intro-image:hover {
-  transform: scale(1.05);
-  transition: transform 0.5s;
+  height: 192px;
+
+  .image-bg,
+  .intro-image {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+  }
+
+  @include media-breakpoint-up(md) {
+    & {
+      height: auto;
+    }
+    .image-bg,
+    .intro-image {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      aspect-ratio: 1 / 1;
+    }
+  }
+
+  .image-bg {
+    background: linear-gradient(45deg, $green7 0%, $green7 100%) top left,
+                linear-gradient(-45deg, $green1 0%, $green1 100%) top right,
+                linear-gradient(-135deg, $green4 0%, $green4 100%) bottom right,
+                linear-gradient(135deg, $green1 0%, $green1 100%) bottom left !important;
+    background-size: 50% 50% !important;
+    background-repeat: no-repeat !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 25%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: filter 0.5s;
+    --image-bg-filter: 40px;
+    @include media-breakpoint-up(md) {
+      & {
+        --image-bg-filter: 56px;
+      }
+    }
+    @include media-breakpoint-up(xl) {
+      & {
+        --image-bg-filter: 68px;
+      }
+    }
+    filter: blur(var(--image-bg-filter));
+  }
+
+  &:hover {
+    .image-bg {
+      filter: blur(calc(var(--image-bg-filter) * 1.5));
+      transition: filter 0.5s;
+    }
+    .intro-image {
+      transform: scale(1.05);
+    }
+  }
+
+  .intro-image {
+    transition: transform 0.5s;
+    z-index: 1;
+  }
 }
 
 .intro-image-absolute {

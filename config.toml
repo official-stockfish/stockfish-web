@@ -1,5 +1,5 @@
 languageCode = "en-us"
-title = "Stockfish - Open Source Chess Engine"
+title = "Stockfish - Strong open-source chess engine"
 
 [params]
   # In most cases you will only want to use either one of these. If you have Google Analytics included in your GTM tags don't put your GA ID here. Otherwise your data might be useless.
@@ -16,7 +16,7 @@ title = "Stockfish - Open Source Chess Engine"
     alt = "Stockfish Logo"
 
   [params.homepage_meta_tags]
-    meta_description = "Stockfish is a strong and open source chess engine."
+    meta_description = "Stockfish is a strong and open-source chess engine."
 
     meta_twitter_site = "@stockfishchess"
     meta_twitter_card = "summary"

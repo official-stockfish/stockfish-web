@@ -25,10 +25,21 @@
 <div class="intro grid">
   <div class="container">
     <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
-        {{ .Content }}
-        <a href="/download/" class="button button-large mb-6">Download Stockfish</a>
-        <h2><a href="/blog/">Latest from the blog</a></h2>
+      <div class="col-12 col-md-7 col-lg-8 col-xl-7 order-2 order-md-1">
+        <h1 class="name">
+          <span class="clip">{{ .Title }}</span>
+        </h1>
+        <h1>{{ .Description }}</h1>
+        <div class="tagline">{{ .Content }}</div>
+        <div class="actions mb-5">
+          <a href="/download/" class="button mb-1">Download</a>
+          <a href="https://github.com/official-stockfish/Stockfish" class="button button-secondary">View on GitHub</a>
+        </div>
+        <p class="mb-1">
+          <strong>
+            <a href="/blog/">Latest from the blog</a>
+          </strong>
+        </p>
         <ul>
         {{- range ( where site.RegularPages "Section" "blog" | first 3 ) }}
         <li class="blog-preview">
@@ -38,8 +49,11 @@
         </ul>
       </div>
       {{ if .Params.intro_image }}
-      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img alt={{ .Title }} class="intro-image{{ if .Params.intro_image_absolute }} intro-image-absolute{{ end }}{{ if .Params.intro_image_hide_on_mobile }} intro-image-hide-mobile{{ end }}" src="{{ .Params.intro_image | relURL }}" />
+      <div class="col-12 col-md-5 col-lg-4 col-xl-5 order-1 order-md-2 position-relative">
+        <div class="image-container mb-3 mb-md-0">
+          <div class="image-bg"></div>
+          <img alt={{ .Title }} class="intro-image{{ if .Params.intro_image_absolute }} intro-image-absolute{{ end }}{{ if .Params.intro_image_hide_on_mobile }} intro-image-hide-mobile{{ end }}" src="{{ .Params.intro_image | relURL }}" />
+        </div>
       </div>
       {{ end }}
     </div>
@@ -49,7 +63,7 @@
 
 {{if .Site.Data.features}}
 <div>
-  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
+  <div class="container pt-6 pb-6">
     <div class="row justify-content-center">
       {{ range .Site.Data.features }}
       <div class="col-12 col-md-6 col-lg-4 mb-2">

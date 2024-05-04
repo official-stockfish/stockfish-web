@@ -1,8 +1,7 @@
 ---
-title: "Stockfish - Open Source Chess Engine"
+title: "Stockfish"
+description: "Strong open-source chess engine"
 intro_image: "images/logo/icon_512x512@2x.png"
 ---
 
-# Stockfish 16.1
-
-Strong open source chess engine
+Download, documentation, technical details, and frequent questions.

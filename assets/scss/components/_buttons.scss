@@ -6,15 +6,21 @@
   border-radius: 4px;
   font-size: 16px;
   font-weight: normal;
-  color: #ffffff;
+  color: $white;
   text-decoration: none;
   -webkit-transition: all 0.15s ease;
   transition: all 0.15s ease;
   &:hover {
-    color: #ffffff;
+    color: $white;
     background-color: lighten($primary, 10%);
     transform: translateY(-1px);
     text-decoration: none;
+  }
+  &.button-secondary {
+    background-color: $gray-700;
+    &:hover {
+      background-color: lighten($gray-700, 10%);
+    }
   }
 }
 
