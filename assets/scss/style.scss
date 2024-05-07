@@ -100,7 +100,6 @@ body:after {
 .grid {
   position: relative;
   background-image: url('/images/grid.svg');
-  min-height: 90vh;
   background-size: 500px 500px;
 }
 .grid::before {

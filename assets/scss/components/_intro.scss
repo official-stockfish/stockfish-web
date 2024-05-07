@@ -2,9 +2,8 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 60px;
-  overflow: hidden;
   text-align: center;
+  min-height: calc(100vh - 60px);
   @include media-breakpoint-up(md) {
     text-align: initial;
   }
