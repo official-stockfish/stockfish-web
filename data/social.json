@@ -16,7 +16,7 @@
     },
     {
         "name": "RSS",
-        "link": "/blog/index.xml",
+        "link": "/blog",
         "image": "images/social/rss.svg"
     }
 ]
