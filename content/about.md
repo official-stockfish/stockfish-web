@@ -29,7 +29,7 @@ chess engine, with frequent updates every few months. Today, it remains
 ## About this website
 
 This website was built by [Daylen Yang](http://daylen.com/) and its source code
-is on [Github](https://github.com/daylen/stockfish-web). The Stockfish icon was
+is on [Github](https://github.com/official-stockfish/stockfish-web). The Stockfish icon was
 designed by [Klein Maetschke](http://iamkle.in).
 
 ## About the GPL
