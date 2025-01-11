@@ -13,7 +13,7 @@ number to 3 is not due to ELO increase (that anyhow should be
 interesting) nor to some cool feature, but it is due to the new super
 awesome testing framework that Gary setup and currently runs on
 
-<http://tests.stockfishchess.org/>
+<https://tests.stockfishchess.org/>
 
 This is really a new beginning for Stockfish development. A development
 that now is fully open and in just few weeks has already attract many

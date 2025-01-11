@@ -15,7 +15,7 @@ start playing chess games using future and current versions of the
 engine.
 
 - [Install Fishtest worker](https://github.com/official-stockfish/fishtest/wiki/Running-the-worker)
-- [Fishtest Dashboard](http://tests.stockfishchess.org/tests)
+- [Fishtest Dashboard](https://tests.stockfishchess.org/tests)
 
 ## Write Code
 

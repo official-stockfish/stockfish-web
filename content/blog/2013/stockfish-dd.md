@@ -9,7 +9,7 @@ aliases:
 This is a new release of Stockfish after the last TCEC season. It is
 almost the same version that played the superfinal against Komodo.
 
-[Download](http://stockfishchess.org/download/) [Browse the source
+[Download](https://stockfishchess.org/download/) [Browse the source
 code](https://github.com/mcostalba/Stockfish)
 
 For people compiling themselves, please verify signature is correct

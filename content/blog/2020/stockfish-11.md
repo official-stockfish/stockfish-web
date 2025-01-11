@@ -8,7 +8,7 @@ aliases:
 
 It is our pleasure to release Stockfish 11 to our fans and supporters.
 
-Downloads are freely available at <http://stockfishchess.org/download/>
+Downloads are freely available at <https://stockfishchess.org/download/>
 
 This version 11 of Stockfish is 50 Elo stronger than the last version,
 and 150 Elo stronger than the version which famously lost a match to
@@ -28,7 +28,7 @@ competition, beating in the superfinal of season 16 an evolution of the
 neural-network engine Leela that had won the previous season. This clash
 of style between an alpha-beta and an neural-network engine produced
 spectacular chess as always, with Stockfish [emerging victorious this
-time](http://mytcecexperience.blogspot.com/2019/10/season-16-superfinal-games-91-100.html).
+time](https://mytcecexperience.blogspot.com/2019/10/season-16-superfinal-games-91-100.html).
 
 Compared to Stockfish 10, we have made hundreds of improvements to the
 [codebase](https://github.com/official-stockfish/Stockfish), from the

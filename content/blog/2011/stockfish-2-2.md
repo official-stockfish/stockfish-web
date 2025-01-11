@@ -11,7 +11,7 @@ Stockfish 2.2. This should be really a small improvement ELO wise, I
 have tested it against SF 2.1.1 JA and in single core I got +10 ELO, we
 think in multi core we should gain some more, but remain anyhow around
 +20 ELO maximum. Not a lot for 6 months of work but at least the
-readability of code base has greatly improved and also shrinked in size
+readability of code base has greatly improved and also shrank in size
 of almost 900 lines:
 
 42 files changed, 3853 insertions(+), 4729 deletions(-)

@@ -1,6 +1,12 @@
-
 {{ $os := .Get 0 }}
-{{ $files := getJSON "assets/" $os }}
+{{ $files := dict }}
+
+{{ with resources.Get $os }}
+  {{ $files = . | transform.Unmarshal }}
+{{ else }}
+  {{ errorf "Unable to get resource %q" $os }}
+{{ end }}
+
 {{ $baseDownloadLink := "https://github.com/official-stockfish/Stockfish/releases/latest/download/" }}
 
 <table>
