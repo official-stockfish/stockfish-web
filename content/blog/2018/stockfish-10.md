@@ -8,7 +8,7 @@ aliases:
 
 Official release version of Stockfish 10.
 
-Downloads are available at <https://stockfishchess.org/download/>
+Downloads are available at <http://stockfishchess.org/download/>
 
 This is also the 10th anniversary version of the Stockfish project,
 which started exactly ten years ago! I wish to extend a huge thank you

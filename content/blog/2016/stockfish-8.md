@@ -13,7 +13,7 @@ has been a huge and hard effort and I would like to thank all the
 testers for their relentless patience, determination and creativity. I
 would like to thank all the people supporting us with CPU time (we don't
 ask nor accept donations so if you want to support us then donating CPU
-time through [fishtest](https://tests.stockfishchess.org/tests) is the
+time through [fishtest](http://tests.stockfishchess.org/tests) is the
 way to go and we greatly appreciate that). I would like to thank Kiran
 Panditrao for the super fast binaries provided in record time and Daylen
 Yang for the amazingly fast update of the site: you guys are great!

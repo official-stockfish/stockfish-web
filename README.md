@@ -11,7 +11,7 @@ To check your version of Hugo, run:
 hugo version
 ```
 
-This will output the currently installed version of Hugo. Make sure you see `/extended` after the version number, for example `ugo v0.140.2-aae02ca612a02e085c08366a9c9279f4abb39d94+extended linux/amd64 BuildDate=2024-12-30T15:01:53Z`. You do not need to use version v0.140.2 specifically, it just needs to have the `/extended` part.
+This will output the currently installed version of Hugo. Make sure you see `/extended` after the version number, for example `hugo v0.144.2-098c68fd18f48031a7145bedab30cbaede48858f+extended linux/amd64 BuildDate=2024-12-30T15:01:53Z`. You do not need to use version v0.144.2 specifically, it just needs to have the `/extended` part.
 
 ## Development
 

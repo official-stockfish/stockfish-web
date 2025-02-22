@@ -8,7 +8,7 @@ aliases:
 
 I am pleased to announce that Stockfish 9 is out.
 
-You can download the official builds from here
+You can download the offical builds from here
 <https://stockfishchess.org/download/>
 
 I would like to thank all the amazing people that made this release

@@ -15,4 +15,4 @@ We recommend that you download Syzygy bases via torrent from here:
 <http://oics.olympuschess.com/tracker/index.php>
 
 Stockfish 6 binaries are available here:
-<https://stockfishchess.org/download/>
+<http://stockfishchess.org/download/>

@@ -3,5 +3,5 @@
   command = "hugo"
 
 [build.environment]
-  HUGO_VERSION = "0.140.2"
+  HUGO_VERSION = "0.144.2"
   HUGO_BASEURL = "/"

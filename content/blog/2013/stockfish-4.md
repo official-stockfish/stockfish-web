@@ -7,7 +7,7 @@ aliases:
 ---
 
 Stockfish 4 has been released. You can download at
-<https://stockfishchess.org/> or browse the sources at
+<http://stockfishchess.org/> or browse the sources at
 <https://github.com/mcostalba/Stockfish>
 
 Diffs from last version is: 43 files changed, 1534 insertions(+), 1703
