@@ -70,3 +70,11 @@
 // Reset
 
 .text-reset { color: inherit !important; }
+
+// Font size
+.fs-1 { font-size: $h1-font-size !important; }
+.fs-2 { font-size: $h2-font-size !important; }
+.fs-3 { font-size: $h3-font-size !important; }
+.fs-4 { font-size: $h4-font-size !important; }
+.fs-5 { font-size: $h5-font-size !important; }
+.fs-6 { font-size: $h6-font-size !important; }

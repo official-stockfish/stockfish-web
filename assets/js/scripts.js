@@ -8,58 +8,42 @@ menuTrigger.onclick = function() {
     body.classList.toggle('lock-scroll')
 }
 
-// https://stackoverflow.com/a/19176790
-function isOldWindows() {
-    return /Windows NT [5-6]\./.test(navigator.userAgent);
+function getUserOS() {
+    const userAgent = navigator.userAgent.toLowerCase();
+    if (userAgent.includes("win")) return "windows";
+    if (userAgent.includes("android") || userAgent.includes("raspberry") || userAgent.includes("raspbian")) return "arm";
+    if (userAgent.includes("linux")) return "linux";
+    if (userAgent.includes("iphone") || userAgent.includes("ipad") || userAgent.includes("ipod")) return "ios";
+    if (userAgent.includes("mac")) return "macos";
+    return "";
 }
 
-function getFastAndSlow(json, old_windows) {
-    let fast = {};
-    let slow = {};
-    for (let obj of json.files) {
-        if (obj.tags && obj.tags.includes( (old_windows ? 'lt_' : '') + 'win10_fast' )) {
-            fast = obj;
+document.addEventListener("DOMContentLoaded", function() {
+    const downloadCards = document.getElementById("download-cards");
+    if (downloadCards) {
+        const userOS = getUserOS();
+        const recommendedCard = document.querySelector(`#${userOS}-card .card`);
+        if (recommendedCard) {
+            recommendedCard.classList.replace("border-dark", "border-success");
+            recommendedCard.parentElement.classList.replace("col-md-6", "col-md-12");
+            recommendedCard.parentElement.classList.add("order-first");
+            const cardHeader = recommendedCard.querySelector(".card-header");
+            if (cardHeader) {
+                const badge = document.createElement("span");
+                badge.className = "badge badge-success ml-1";
+                badge.textContent = "Recommended";
+                cardHeader.appendChild(badge);
+            }
         }
-        if (obj.tags && obj.tags.includes( (old_windows ? 'lt_' : '') + 'win10_compat' )) {
-            slow = obj;
-        }
+        // Add event listeners for show more buttons
+        document.querySelectorAll('.show-more').forEach(button => {
+            button.addEventListener('click', function() {
+                const items = this.previousElementSibling;
+                items.classList.toggle('hidden');
+                this.textContent = items.classList.contains('hidden') ?
+                    'Show more options' : 'Show fewer options';
+            });
+        });
     }
-    return [fast, slow];
-}
+});
 
-const baseDownloadLink = "https://github.com/official-stockfish/Stockfish/releases/latest/download/";
-
-const windowsTable = document.getElementById('windows-table');
-if (windowsTable) {
-    fetch('/windows.json?a').then(response => response.json()).then(data => {
-        const fast_and_slow = getFastAndSlow(data, isOldWindows());
-        windowsTable.querySelector('.fast').href = baseDownloadLink + fast_and_slow[0].file;
-        windowsTable.querySelector('.fast span').textContent = fast_and_slow[0].arch;
-        windowsTable.querySelector('.compat').href = baseDownloadLink + fast_and_slow[1].file;
-        windowsTable.querySelector('.compat span').textContent = fast_and_slow[1].arch;
-    })
-}
-
-const linuxTable = document.getElementById('linux-table');
-if (linuxTable) {
-    fetch('/linux.json?a').then(response => response.json()).then(data => {
-        const fastFile = data.files.find(file => file.tags && file.tags.includes('fast'));
-        const compatFile = data.files.find(file => file.tags && file.tags.includes('compat'));
-        linuxTable.querySelector('.fast').href = fastFile ? baseDownloadLink + fastFile.file : '';
-        linuxTable.querySelector('.fast span').textContent = fastFile ? fastFile.arch : '';
-        linuxTable.querySelector('.compat').href = compatFile ? baseDownloadLink + compatFile.file : '';
-        linuxTable.querySelector('.compat span').textContent = compatFile ? compatFile.arch : '';
-    })
-}
-
-const armTable = document.getElementById('arm-table');
-if (armTable) {
-    fetch('/arm.json?a').then(response => response.json()).then(data => {
-        const fastFile = data.files.find(file => file.tags && file.tags.includes('fast'));
-        const compatFile = data.files.find(file => file.tags && file.tags.includes('compat'));
-        armTable.querySelector('.fast').href = fastFile ? baseDownloadLink + fastFile.file : '';
-        armTable.querySelector('.fast span').textContent = fastFile ? fastFile.arch : '';
-        armTable.querySelector('.compat').href = compatFile ? baseDownloadLink + compatFile.file : '';
-        armTable.querySelector('.compat span').textContent = compatFile ? compatFile.arch : '';
-    })
-}

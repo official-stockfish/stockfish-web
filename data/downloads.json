@@ -1,0 +1,134 @@
+{
+	"Windows": {
+		"default": [
+			{
+				"arch": "AVX2",
+				"file": "windows-x86-64-avx2.zip",
+				"description": "Recommended for most users | Intel (2013+) and AMD (2015+)"
+			}
+		],
+		"remaining": [
+			{
+				"arch": "POPCNT",
+				"file": "windows-x86-64-sse41-popcnt.zip",
+				"description": "A bit slower than AVX2 | Intel (2008+) and AMD (2011+)"
+			},
+			{
+				"arch": "VNNI-512",
+				"file": "windows-x86-64-vnni512.zip"
+			},
+			{
+				"arch": "VNNI-256",
+				"file": "windows-x86-64-vnni256.zip"
+			},
+			{
+				"arch": "AVX-512",
+				"file": "windows-x86-64-avx512.zip",
+				"description": "A bit faster than BMI2 | AMD Zen 4"
+			},
+			{
+				"arch": "BMI2",
+				"file": "windows-x86-64-bmi2.zip",
+				"description": "A bit faster than AVX2 | Intel (2013+) and AMD Zen 3"
+			},
+			{
+				"arch": "64-bit",
+				"file": "windows-x86-64.zip",
+				"description": "Very slow, but works on all 64-bit CPUs"
+			}
+		]
+	},
+	"ARM": {
+		"default": [
+			{
+				"arch": "ARMv8",
+				"file": "android-armv8.tar",
+				"description": "Recommended for most users"
+			}
+		],
+		"remaining": [
+			{
+				"arch": "ARMv7",
+				"file": "android-armv7.tar",
+				"description": "A bit slower than ARMv8, but works on older devices"
+			},
+			{
+				"arch": "ARMv8 Dot Product",
+				"file": "android-armv8-dotprod.tar",
+				"description": "A bit faster than ARMv8. Recommended for modern devices with ARMv8.2-A"
+			},
+			{
+				"arch": "ARMv7 NEON",
+				"file": "android-armv7-neon.tar"
+			}
+		]
+	},
+	"Linux": {
+		"default": [
+			{
+				"arch": "AVX2",
+				"file": "ubuntu-x86-64-avx2.tar",
+				"description": "Recommended for most users | Intel (2013+) and AMD (2015+)"
+			}
+		],
+		"remaining": [
+			{
+				"arch": "POPCNT",
+				"file": "ubuntu-x86-64-sse41-popcnt.tar",
+				"description": "A bit slower than AVX2 | Intel (2008+) and AMD (2011+)"
+			},
+			{
+				"arch": "VNNI-512",
+				"file": "ubuntu-x86-64-vnni512.tar"
+			},
+			{
+				"arch": "VNNI-256",
+				"file": "ubuntu-x86-64-vnni256.tar"
+			},
+			{
+				"arch": "AVX-512",
+				"file": "ubuntu-x86-64-avx512.tar",
+				"description": "A bit faster than BMI2 | AMD Zen 4"
+			},
+			{
+				"arch": "BMI2",
+				"file": "ubuntu-x86-64-bmi2.tar",
+				"description": "A bit faster than AVX2 | Intel (2013+) and AMD Zen 3"
+			},
+			{
+				"arch": "64-bit",
+				"file": "ubuntu-x86-64.tar",
+				"description": "Very slow, but works on all 64-bit CPUs"
+			}
+		]
+	},
+	"macOS": {
+		"default": [
+			{
+				"arch": "Apple Silicon",
+				"file": "macos-m1-apple-silicon.tar",
+				"description": "Recommended for modern Macs"
+			}
+		],
+		"remaining": [
+			{
+				"arch": "BMI2",
+				"file": "macos-x86-64-bmi2.tar",
+				"description": "Recommended for Intel-based Macs (2013+)"
+			},
+			{
+				"arch": "AVX2",
+				"file": "macos-x86-64-avx2.tar"
+			},
+			{
+				"arch": "POPCNT",
+				"file": "macos-x86-64-sse41-popcnt.tar"
+				
+			},
+			{
+				"arch": "64-bit",
+				"file": "macos-x86-64.tar"
+			}
+		]
+	}
+}

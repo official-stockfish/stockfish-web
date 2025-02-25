@@ -1,0 +1,54 @@
+{{- $id := .id | lower -}}
+{{- $icon := .icon -}}
+{{- $osData := .osData -}}
+{{- $title := .title -}}
+{{- $subtitle := .subtitle -}}
+{{- $footer := .footer -}}
+{{- $extraContent := .extraContent -}}
+
+<div id="{{ $id }}-card" class="col-md-6 mb-2 px-1">
+    <div class="card h-100 overflow-hidden rounded-lg border-dark">
+        <div class="card-header d-flex align-items-center">
+            <i class="{{ $icon }} mr-1"></i>
+            <h2 class="fs-5 my-0">{{ $title }}{{ with $subtitle }} <small class="text-muted">{{ . }}</small>{{ end }}</h2>
+        </div>
+        {{ if $osData }}
+        <div class="card-body py-0">
+            {{ $baseUrl := "https://github.com/official-stockfish/Stockfish/releases/latest/download/stockfish-" }}
+            {{ range $index, $option := $osData.default }}
+                <div class="download-item py-1 border-bottom d-flex justify-content-between align-items-center">
+                    <div class="mr-1">
+                        <strong>{{ $option.arch }}</strong>
+                        {{ with $option.description }}<div class="text-muted">{{ . }}</div>{{ end }}
+                    </div>
+                    <a href="{{ $baseUrl }}{{ $option.file }}" class="rounded button button-download">Download</a>
+                </div>
+            {{ end }}
+            {{ if $osData.remaining }}
+                <div class="remaining-items hidden">
+                    {{ range $index, $option := $osData.remaining }}
+                        <div class="download-item py-1 border-bottom d-flex justify-content-between align-items-center">
+                            <div class="mr-1">
+                                <strong>{{ $option.arch }}</strong>
+                                {{ with $option.description }}<div class="text-muted">{{ . }}</div>{{ end }}
+                            </div>
+                            <a href="{{ $baseUrl }}{{ $option.file }}" class="rounded button button-download">Download</a>
+                        </div>
+                    {{ end }}
+                </div>
+                <button class="show-more btn btn-link w-100 py-1 text-center">Show more options</button>
+            {{ end }}
+        </div>
+        {{ end }}
+        {{ with $footer }}
+        <div class="card-footer text-muted">
+            {{ . | safeHTML }}
+        </div>
+        {{ end }}
+        {{ with $extraContent }}
+        <div class="card-body py-0">
+            {{ . | safeHTML }}
+        </div>
+        {{ end }}
+    </div>
+</div>
