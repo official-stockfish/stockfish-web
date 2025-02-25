@@ -5,7 +5,7 @@ title: 'About'
 ## Get Notified
 
 Get notified about new releases by
-[following us on Twitter](http://twitter.com/stockfishchess),
+[following us on X](https://x.com/stockfishchess),
 joining our [Discord](https://discord.gg/GWDRS3kU6R),
 watching us on [GitHub](https://github.com/official-stockfish/Stockfish),
 or [reading our blog](/blog/).
@@ -28,9 +28,9 @@ chess engine, with frequent updates every few months. Today, it remains
 
 ## About this website
 
-This website was built by [Daylen Yang](http://daylen.com/) and its source code
+This website was built by [Daylen Yang](https://daylen.com/) and its source code
 is on [Github](https://github.com/official-stockfish/stockfish-web). The Stockfish icon was
-designed by [Klein Maetschke](http://iamkle.in).
+designed by [Klein Maetschke](https://iamkle.in).
 
 ## About the GPL
 
