@@ -29,7 +29,11 @@
   <link rel="alternate" type="application/rss+xml" title="Stockfish Blog RSS Feed" href="/blog/index.xml">
   <link rel="preconnect" href="https://rsms.me/">
   <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-  
+
+  <link href="/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+  <link href="/fontawesome/css/brands.min.css" rel="stylesheet">
+  <link href="/fontawesome/css/solid.min.css" rel="stylesheet">
+
   <!-- CSS-->
   {{ if .Site.IsServer }}
   {{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS (dict "targetPath" "css/style.css" "enableSourceMap" true) }}
@@ -54,15 +58,6 @@
   {{ partial "footer.html" . }}
 
   {{ $scripts := resources.Get "js/scripts.js" }}
-  <!-- dummy to force publishing of windows.json -->
-  {{ $windows_json := resources.Get "windows.json" }}
-  {{ $windows_json_link := $windows_json.RelPermalink }}
-  {{ $linux_json := resources.Get "linux.json" }}
-  {{ $linux_json_link := $linux_json.RelPermalink }}
-  {{ $macos_json := resources.Get "macos.json" }}
-  {{ $macos_json_link := $macos_json.RelPermalink }}
-  {{ $arm_json := resources.Get "arm.json" }}
-  {{ $arm_json_link := $arm_json.RelPermalink }}
 
   {{ block "footer_js" . }}
   {{ end }}

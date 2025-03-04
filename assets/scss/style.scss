@@ -36,6 +36,13 @@ $footer-text-color: $white-offset;
 @import 'bootstrap-variables';
 @import 'bootstrap/bootstrap-reboot';
 @import 'bootstrap/bootstrap-grid';
+@import 'bootstrap/card';
+@import 'bootstrap/badge';
+@import 'bootstrap/buttons';
+@import 'bootstrap/utilities/borders';
+@import 'bootstrap/utilities/text';
+@import 'bootstrap/utilities/sizing';
+@import 'bootstrap/utilities/overflow';
 // @import 'bootstrap/bootstrap'; // Uncomment this line to import the entire Bootstrap library
 
 
@@ -110,6 +117,9 @@ body:after {
   bottom: 0;
   background: linear-gradient(to bottom, transparent 75%, $body-bg 100%);
   pointer-events: none;
+}
+.download-item:last-child {
+  border-bottom: none !important;
 }
 
 :root {

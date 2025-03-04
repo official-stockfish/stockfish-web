@@ -1,0 +1,37 @@
+{{ define "body_classes" }}page-default-single{{ end }}
+
+{{ define "main" }}
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+    <div class="row justify-content-start">
+        <div class="col-12">
+            <h1 class="title">{{.Title}}</h1>
+            <div class="content">
+                <blockquote>
+                    <p><b>Note:</b> Stockfish is a <a target="_blank" href="https://official-stockfish.github.io/docs/stockfish-wiki/Stockfish-FAQ.html#executing-stockfish-opens-a-cmd-window">command line program</a>. You may want to use it in your own <a target="_blank" href="https://official-stockfish.github.io/docs/stockfish-wiki/Download-and-usage.html#download-a-chess-gui">chess GUI</a>.</p>
+                </blockquote>
+
+                <div id="download-cards" class="row">
+                    {{ $downloads := .Site.Data.downloads }}
+                    
+                    <!-- Windows -->
+                    {{ partial "download-card" (dict "id" "windows" "title" "Windows" "subtitle" "(x64)" "icon" "fa-brands fa-windows" "osData" $downloads.Windows "footer" (partial "windows-footer.html" .)) }}
+
+                    <!-- ARM -->
+                    {{ partial "download-card" (dict "id" "arm" "title" "Android/Linux" "subtitle" "(ARM)" "icon" "fa-solid fa-microchip" "osData" $downloads.ARM) }}
+
+                    <!-- Linux -->
+                    {{ partial "download-card" (dict "id" "linux" "title" "Linux" "subtitle" "(x64)" "icon" "fa-brands fa-linux" "osData" $downloads.Linux) }}
+
+                    <!-- macOS -->
+                    {{ partial "download-card" (dict "id" "macos" "title" "macOS" "icon" "fa-brands fa-apple" "osData" $downloads.macOS "footer" "Alternative methods:" "extraContent" (partial "macos-extra.html" .)) }}
+
+                    <!-- iOS -->
+                    {{ partial "download-card" (dict "id" "ios" "title" "iOS" "icon" "fa-brands fa-apple" "extraContent" (partial "ios-extra.html" .)) }}
+                </div>
+
+                {{.Content}}
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
