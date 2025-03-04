@@ -10,8 +10,8 @@ title = "Stockfish - Strong open-source chess engine"
     hide_view_all_services = false  # set to true to hide the View All Services button
 
   [params.logo]
-    mobile = "images/logo/icon_128x128@2x.png"
-    desktop = "images/logo/icon_128x128@2x.png"
+    mobile = "images/logo/icon_128x128@2x.webp"
+    desktop = "images/logo/icon_128x128@2x.webp"
     desktop_height = "36"
     alt = "Stockfish Logo"
 
