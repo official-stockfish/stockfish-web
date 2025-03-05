@@ -6,11 +6,11 @@
         <div class="col-12">
             <h1 class="title">{{.Title}}</h1>
             <div class="content">
-                <blockquote>
-                    <p><b>Note:</b> Stockfish is a <a target="_blank" href="https://official-stockfish.github.io/docs/stockfish-wiki/Stockfish-FAQ.html#executing-stockfish-opens-a-cmd-window">command line program</a>. You may want to use it in your own <a target="_blank" href="https://official-stockfish.github.io/docs/stockfish-wiki/Download-and-usage.html#download-a-chess-gui">chess GUI</a>.</p>
+                <blockquote class="bg-800 py-1 rounded">
+                    <p class="mb-0"><b>Note:</b> Stockfish is a <a target="_blank" href="https://official-stockfish.github.io/docs/stockfish-wiki/Stockfish-FAQ.html#executing-stockfish-opens-a-cmd-window">command line program</a>. You may want to use it in your own <a target="_blank" href="https://official-stockfish.github.io/docs/stockfish-wiki/Download-and-usage.html#download-a-chess-gui">chess GUI</a>.</p>
                 </blockquote>
 
-                <div id="download-cards" class="row">
+                <div id="download-cards" class="row mx-n1">
                     {{ $downloads := .Site.Data.downloads }}
                     
                     <!-- Windows -->

@@ -122,6 +122,12 @@ body:after {
   border-bottom: none !important;
 }
 
+@each $name, $value in $grays {
+  .bg-#{$name} {
+    background-color: $value;
+  }
+}
+
 :root {
   font-family: Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
