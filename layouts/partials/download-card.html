@@ -10,7 +10,7 @@
     <div class="card h-100 overflow-hidden rounded-lg border-dark">
         <div class="card-header d-flex align-items-center">
             <i class="{{ $icon }} mr-1"></i>
-            <h2 class="fs-5 my-0">{{ $title }}{{ with $subtitle }} <small class="text-muted">{{ . }}</small>{{ end }}</h2>
+            <h2 class="fs-5 my-0 flex-grow-1 flex-md-grow-0">{{ $title }}{{ with $subtitle }} <small class="text-muted">{{ . }}</small>{{ end }}</h2>
         </div>
         {{ if $osData }}
         <div class="card-body py-0">
