@@ -24,7 +24,7 @@
 			{
 				"arch": "AVX-512",
 				"file": "windows-x86-64-avx512.zip",
-				"description": "A bit faster than BMI2 | AMD Zen 4"
+				"description": "A bit faster than BMI2 | AMD Zen 4+"
 			},
 			{
 				"arch": "BMI2",
@@ -88,7 +88,7 @@
 			{
 				"arch": "AVX-512",
 				"file": "ubuntu-x86-64-avx512.tar",
-				"description": "A bit faster than BMI2 | AMD Zen 4"
+				"description": "A bit faster than BMI2 | AMD Zen 4+"
 			},
 			{
 				"arch": "BMI2",
