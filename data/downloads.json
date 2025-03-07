@@ -29,7 +29,7 @@
 			{
 				"arch": "BMI2",
 				"file": "windows-x86-64-bmi2.zip",
-				"description": "A bit faster than AVX2 | Intel (2013+) and AMD Zen 3"
+				"description": "A bit faster than AVX2 | Intel (2013+) and AMD Zen 3+"
 			},
 			{
 				"arch": "64-bit",
@@ -93,7 +93,7 @@
 			{
 				"arch": "BMI2",
 				"file": "ubuntu-x86-64-bmi2.tar",
-				"description": "A bit faster than AVX2 | Intel (2013+) and AMD Zen 3"
+				"description": "A bit faster than AVX2 | Intel (2013+) and AMD Zen 3+"
 			},
 			{
 				"arch": "64-bit",
