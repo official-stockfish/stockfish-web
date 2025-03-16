@@ -1,19 +1,19 @@
 [
   {
     "title": "Strong",
-    "description": "Stockfish has won the Top Chess Engine Championship and Chess.com Computer Chess Championship, and consistently ranks highly on rating lists.",
+    "description": "One of the strongest chess engines in the world. Winner of the Top Chess Engine Championship and Chess.com Computer Chess Championship, and consistently ranks highly on rating lists.",
     "url": "https://en.wikipedia.org/wiki/Stockfish_(chess)#Competition_results",
-    "button_text": "Competition Results"
+    "button_text": "View competition results"
   },
   {
-    "title": "Open Source",
-    "description": "Stockfish is open source (GPLv3 license). That means you can read the code, modify it, and contribute back.",
-    "url": "https://github.com/official-stockfish/Stockfish",
-    "button_text": "View Source"
+    "title": "Community-Driven",
+    "description": "Developed by a global community of chess enthusiasts and programmers and released under the GPLv3 license, so everyone can read the code, modify it, and contribute back.",
+    "url": "https://discord.gg/GWDRS3kU6R",
+    "button_text": "Join our Discord"
   },
   {
-    "title": "Run Anywhere",
-    "description": "You can use Stockfish on your computer or on your iOS or Android device. So you can get world-class chess analysis, wherever you are.",
+    "title": "Cross-Platform",
+    "description": "Available on Windows, macOS, Linux, Android, and iOS. You can get world-class chess analysis wherever you are.",
     "url": "/download/",
     "button_text": "Download"
   }
