@@ -55,7 +55,7 @@
 			{
 				"arch": "ARMv8 Dot Product",
 				"file": "android-armv8-dotprod.tar",
-				"description": "A bit faster than ARMv8. Recommended for modern devices with ARMv8.2-A"
+				"description": "A bit faster than ARMv8. Recommended for modern devices"
 			},
 			{
 				"arch": "ARMv7 NEON",
