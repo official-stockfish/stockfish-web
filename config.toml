@@ -16,7 +16,7 @@ title = "Stockfish - Strong open-source chess engine"
     alt = "Stockfish Logo"
 
   [params.homepage_meta_tags]
-    meta_description = "Stockfish is a free and open-source, cross-platform chess engine, trusted by grandmasters and leading chess platforms worldwide."
+    meta_description = "Stockfish is a free, open-source, and cross-platform chess engine, trusted by grandmasters and leading chess platforms worldwide."
 
     meta_twitter_site = "@stockfishchess"
     meta_twitter_card = "summary"
