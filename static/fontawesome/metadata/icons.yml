@@ -24506,15 +24506,15 @@ square-tumblr:
     - brands
   unicode: f174
   voted: false
-square-twitter:
+square-X:
   aliases:
     names:
-      - twitter-square
+      - X-square
   changes:
     - 1.0.0
     - 5.0.0
     - 6.1.2
-  label: Twitter Square
+  label: X Square
   search:
     terms: []
   styles:
@@ -27274,11 +27274,11 @@ twitch:
     - brands
   unicode: f1e8
   voted: false
-twitter:
+X:
   changes:
     - 2.0.0
     - 5.0.0
-  label: Twitter
+  label: X
   search:
     terms: []
   styles:

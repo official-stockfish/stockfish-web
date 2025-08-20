@@ -205,9 +205,9 @@
     "chart-column"
   ],
   [
-    "twitter-square",
+    "X-square",
     "fab",
-    "square-twitter"
+    "square-X"
   ],
   [
     "facebook-square",
@@ -280,7 +280,7 @@
     "bookmark"
   ],
   [
-    "twitter",
+    "X",
     "fab",
     null
   ],
@@ -2457,7 +2457,7 @@
   [
     61569,
     "fab",
-    "square-twitter"
+    "square-X"
   ],
   [
     61570,
@@ -2522,7 +2522,7 @@
   [
     61593,
     "fab",
-    "twitter"
+    "X"
   ],
   [
     61594,

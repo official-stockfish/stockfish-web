@@ -65114,10 +65114,10 @@
       "brands"
     ]
   },
-  "square-twitter": {
+  "square-X": {
     "aliases": {
       "names": [
-        "twitter-square"
+        "X-square"
       ]
     },
     "changes": [
@@ -65133,7 +65133,7 @@
       "brands"
     ],
     "unicode": "f081",
-    "label": "Twitter Square",
+    "label": "X Square",
     "voted": false,
     "svg": {
       "brands": {
@@ -72234,7 +72234,7 @@
       "brands"
     ]
   },
-  "twitter": {
+  "X": {
     "changes": [
       "2.0.0",
       "5.0.0"
@@ -72247,7 +72247,7 @@
       "brands"
     ],
     "unicode": "f099",
-    "label": "Twitter",
+    "label": "X",
     "voted": false,
     "svg": {
       "brands": {

@@ -124,7 +124,7 @@ Copy your Google Analytics id into the `config.toml` - Also supports Google Tag 
  
 ### Homepage meta tags
 
-Often a homepage requires special meta tags such as a meta description or og meta data for twitter, facebook etc. You can configure these values in the `config.toml`
+Often a homepage requires special meta tags such as a meta description or og meta data for X, facebook etc. You can configure these values in the `config.toml`
 
 ```
 // config.toml
@@ -135,9 +135,9 @@ Often a homepage requires special meta tags such as a meta description or og met
     meta_og_url = "https://www.mywebsite.com"
     meta_og_image = "https://www.mywebsite.com/images/tn.png"
     meta_og_description = "a description of your website."
-    meta_twitter_card = "summary"
-    meta_twitter_site = "@mytwitterhandle"
-    meta_twitter_creator = "@mytwitterhandle"
+    meta_X_card = "summary"
+    meta_X_site = "@myXhandle"
+    meta_X_creator = "@myXhandle"
 ```
 
 ### Override meta tags on a per layout basis

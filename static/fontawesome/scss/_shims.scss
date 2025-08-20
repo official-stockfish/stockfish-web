@@ -154,11 +154,11 @@
 
 .#{$fa-css-prefix}.#{$fa-css-prefix}-bar-chart-o:before { content: unquote("\"#{ $fa-var-chart-column }\""); }
 
-.#{$fa-css-prefix}.#{$fa-css-prefix}-twitter-square {
+.#{$fa-css-prefix}.#{$fa-css-prefix}-X-square {
   font-family: 'Font Awesome 6 Brands';
   font-weight: 400;
 }
-.#{$fa-css-prefix}.#{$fa-css-prefix}-twitter-square:before { content: unquote("\"#{ $fa-var-square-twitter }\""); }
+.#{$fa-css-prefix}.#{$fa-css-prefix}-X-square:before { content: unquote("\"#{ $fa-var-square-X }\""); }
 
 .#{$fa-css-prefix}.#{$fa-css-prefix}-facebook-square {
   font-family: 'Font Awesome 6 Brands';
@@ -224,7 +224,7 @@
 }
 .#{$fa-css-prefix}.#{$fa-css-prefix}-bookmark-o:before { content: unquote("\"#{ $fa-var-bookmark }\""); }
 
-.#{$fa-css-prefix}.#{$fa-css-prefix}-twitter {
+.#{$fa-css-prefix}.#{$fa-css-prefix}-X {
   font-family: 'Font Awesome 6 Brands';
   font-weight: 400;
 }

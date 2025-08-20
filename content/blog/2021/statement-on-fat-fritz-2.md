@@ -21,7 +21,7 @@ lines of code modification (engine name, authors list and a few
 parameters), and a new set of NNUE net weights considered proprietary.
 ChessBase's communication on Fat Fritz 2, claiming originality where
 there is none, has [shocked our
-community](https://twitter.com/tordr/status/1359428424255823875).
+community](https://X.com/tordr/status/1359428424255823875).
 Furthermore, the engine Fat Fritz 2 fails to convince on [independent
 rating lists](https://www.sp-cc.de/), casting doubt on the usefulness of
 those modifications. Indeed, we feel that customers buying Fat Fritz 2

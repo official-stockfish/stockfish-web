@@ -82,7 +82,7 @@ body {
 }
 
 // Display breakpoints for DEV
-{{ if .Site.IsServer }}
+{{ if hugo.IsServer }}
 body:after {
   color: #000000;
   font-size: 12px;
