@@ -4,11 +4,11 @@
 {{ define "meta_tags" }}
 <meta name="description" content="{{ .Description | default .Site.Params.homepage_meta_tags.meta_description }}"/>
 
-<meta name="twitter:image:src" content="{{ .Site.Params.homepage_meta_tags.meta_og_image }}" />
-<meta name="twitter:site" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_site }}" />
-<meta name="twitter:card" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_card }}" />
-<meta name="twitter:title" content="{{ .Title | default .Site.Params.homepage_meta_tags.meta_og_title }}" />
-<meta name="twitter:description" content="{{ .Description | default .Site.Params.homepage_meta_tags.meta_description }}" />
+<meta name="X:image:src" content="{{ .Site.Params.homepage_meta_tags.meta_og_image }}" />
+<meta name="X:site" content="{{ .Site.Params.homepage_meta_tags.meta_X_site }}" />
+<meta name="X:card" content="{{ .Site.Params.homepage_meta_tags.meta_X_card }}" />
+<meta name="X:title" content="{{ .Title | default .Site.Params.homepage_meta_tags.meta_og_title }}" />
+<meta name="X:description" content="{{ .Description | default .Site.Params.homepage_meta_tags.meta_description }}" />
 
 <meta property="og:image" content="{{ .Site.Params.homepage_meta_tags.meta_og_image }}" />
 <meta property="og:image:alt" content="{{ .Description | default .Site.Params.homepage_meta_tags.meta_description }}" />

@@ -575,9 +575,9 @@ tumblr-square:
   name: square-tumblr
 turkish-lira:
   name: turkish-lira-sign
-twitter-square:
+X-square:
   prefix: fab
-  name: square-twitter
+  name: square-X
 unlink:
   name: link-slash
 unlock-alt:

@@ -29525,10 +29525,10 @@ square-tumblr:
   label: Tumblr Square
   unicode: f174
   voted: false
-square-twitter:
+square-X:
   aliases:
     names:
-      - twitter-square
+      - X-square
   changes:
     - 1.0.0
     - 5.0.0
@@ -29540,7 +29540,7 @@ square-twitter:
     pro:
       - family: classic
         style: brands
-  label: Twitter Square
+  label: X Square
   unicode: f081
   voted: false
 square-up-right:
@@ -32815,7 +32815,7 @@ twitch:
   label: Twitch
   unicode: f1e8
   voted: false
-twitter:
+X:
   changes:
     - 2.0.0
     - 5.0.0
@@ -32826,7 +32826,7 @@ twitter:
     pro:
       - family: classic
         style: brands
-  label: Twitter
+  label: X
   unicode: f099
   voted: false
 typo3:

@@ -6727,10 +6727,10 @@ readers do not read off random characters that represent icons */
 .fa-sellcast:before {
   content: "\f2da"; }
 
-.fa-square-twitter:before {
+.fa-square-X:before {
   content: "\f081"; }
 
-.fa-twitter-square:before {
+.fa-X-square:before {
   content: "\f081"; }
 
 .fa-r-project:before {
@@ -7714,7 +7714,7 @@ readers do not read off random characters that represent icons */
 .fa-jenkins:before {
   content: "\f3b6"; }
 
-.fa-twitter:before {
+.fa-X:before {
   content: "\f099"; }
 
 .fa-rockrms:before {

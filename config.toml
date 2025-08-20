@@ -18,8 +18,8 @@ title = "Stockfish - Strong open-source chess engine"
   [params.homepage_meta_tags]
     meta_description = "Stockfish is a strong and open-source chess engine."
 
-    meta_twitter_site = "@stockfishchess"
-    meta_twitter_card = "summary"
+    meta_X_site = "@stockfishchess"
+    meta_X_card = "summary"
 
     meta_og_site_name = "Stockfish"
     meta_og_type = "website"
