@@ -14,22 +14,28 @@
 				"description": "A bit slower than AVX2 | Intel (2008+) and AMD (2011+)"
 			},
 			{
+				"arch": "AVX-512ICL",
+				"file": "windows-x86-64-avx512icl.zip",
+				"description": "Fastest | Intel (Ice Lake and Rocket Lake) and AMD (Zen 4 and newer)"
+			},
+			{
 				"arch": "VNNI-512",
 				"file": "windows-x86-64-vnni512.zip"
 			},
 			{
-				"arch": "VNNI-256",
-				"file": "windows-x86-64-vnni256.zip"
-			},
-			{
 				"arch": "AVX-512",
 				"file": "windows-x86-64-avx512.zip",
-				"description": "A bit faster than BMI2 | AMD Zen 4+"
+				"description": "A bit faster than BMI2 | Intel Skylake-X and Cascade Lake-X"
+			},
+			{
+				"arch": "AVX-VNNI",
+				"file": "windows-x86-64-avxvnni.zip",
+				"description": "A bit faster than BMI2 | Intel Alder Lake and newer"
 			},
 			{
 				"arch": "BMI2",
 				"file": "windows-x86-64-bmi2.zip",
-				"description": "A bit faster than AVX2 | Intel (2013+) and AMD Zen 3+"
+				"description": "A bit faster than AVX2 | Intel (2013+) and AMD Zen 3"
 			},
 			{
 				"arch": "64-bit",
@@ -41,24 +47,34 @@
 	"ARM": {
 		"default": [
 			{
-				"arch": "ARMv8",
+				"arch": "Android ARMv8",
 				"file": "android-armv8.tar",
+				"description": "Recommended for most users"
+			},
+			{
+				"arch": "Windows ARMv8",
+				"file": "windows-armv8.zip",
 				"description": "Recommended for most users"
 			}
 		],
 		"remaining": [
 			{
-				"arch": "ARMv7",
-				"file": "android-armv7.tar",
-				"description": "A bit slower than ARMv8, but works on older devices"
+				"arch": "Windows ARMv8 Dot Product",
+				"file": "windows-armv8-dotprod.zip",
+				"description": "A bit faster than ARMv8. Recommended for modern devices"
 			},
 			{
-				"arch": "ARMv8 Dot Product",
+				"arch": "Android ARMv8 Dot Product",
 				"file": "android-armv8-dotprod.tar",
 				"description": "A bit faster than ARMv8. Recommended for modern devices"
 			},
 			{
-				"arch": "ARMv7 NEON",
+				"arch": "Android ARMv7",
+				"file": "android-armv7.tar",
+				"description": "A bit slower than ARMv8, but works on older devices"
+			},
+			{
+				"arch": "Android ARMv7 NEON",
 				"file": "android-armv7-neon.tar"
 			}
 		]
@@ -78,22 +94,28 @@
 				"description": "A bit slower than AVX2 | Intel (2008+) and AMD (2011+)"
 			},
 			{
+				"arch": "AVX-512ICL",
+				"file": "ubuntu-x86-64-avx512icl.tar",
+				"description": "Fastest | Intel (Ice Lake and Rocket Lake) and AMD (Zen 4 and newer)"
+			},
+			{
 				"arch": "VNNI-512",
 				"file": "ubuntu-x86-64-vnni512.tar"
 			},
 			{
-				"arch": "VNNI-256",
-				"file": "ubuntu-x86-64-vnni256.tar"
-			},
-			{
 				"arch": "AVX-512",
 				"file": "ubuntu-x86-64-avx512.tar",
-				"description": "A bit faster than BMI2 | AMD Zen 4+"
+				"description": "A bit faster than BMI2 | Intel Skylake-X and Cascade Lake-X"
+			},
+			{
+				"arch": "AVX-VNNI",
+				"file": "ubuntu-x86-64-avxvnni.tar",
+				"description": "A bit faster than BMI2 | Intel Alder Lake and newer"
 			},
 			{
 				"arch": "BMI2",
 				"file": "ubuntu-x86-64-bmi2.tar",
-				"description": "A bit faster than AVX2 | Intel (2013+) and AMD Zen 3+"
+				"description": "A bit faster than AVX2 | Intel (2013+) and AMD Zen 3"
 			},
 			{
 				"arch": "64-bit",

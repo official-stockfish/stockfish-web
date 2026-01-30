@@ -8,14 +8,13 @@ Whether you are a programming wizard or just a fan, there's something you can do
 
 ## Fishtest
 
-Fishtest lets you volunteer your computer's processing power to help
-test future versions of Stockfish. No coding required! All you need to
-do is install the Fishtest worker, and your computer will automatically
-start playing chess games using future and current versions of the
-engine.
+Help Stockfish improve by installing the Fishtest worker; your computer will run games to test future versions of the engine!
 
-- [Install Fishtest worker](https://github.com/official-stockfish/fishtest/wiki/Running-the-worker)
-- [Fishtest Dashboard](http://tests.stockfishchess.org/tests)
+- Windows: [Install the worker GUI **(beta)**](https://github.com/dav1312/fishtest-worker-gui/releases/latest/download/fishtest-worker-gui.exe)
+  - The worker GUI is unsigned; if you see "Windows protected your PC", click More info → Run anyway.
+- Linux & Cloud: [Server and Worker Docker Image](https://github.com/official-stockfish/docker-fishtest)
+- [Further options and detailed Worker Documentation](https://github.com/official-stockfish/fishtest/wiki/Running-the-worker)
+- [Dashboard](http://tests.stockfishchess.org/tests)
 
 ## Write Code
 

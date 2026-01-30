@@ -1,5 +1,5 @@
 ---
-title: 'Download Stockfish 17.1'
+title: 'Download Stockfish 18'
 description: 'Download Stockfish for Windows, Android, MacOS, iOS or Linux.'
 layout: download
 aliases:
@@ -10,7 +10,7 @@ aliases:
 
 ## Source Code
 - [Stockfish engine on GitHub](https://github.com/official-stockfish/Stockfish)
-- [Download Stockfish 17.1 source (zip)](https://github.com/official-stockfish/Stockfish/archive/refs/tags/sf_17.1.zip)
+- [Download Stockfish 18 source (zip)](https://github.com/official-stockfish/Stockfish/archive/refs/tags/sf_18.zip)
 - [Stockfish for Mac on GitHub](https://github.com/daylen/stockfish-mac)
 
 ## Other Versions
