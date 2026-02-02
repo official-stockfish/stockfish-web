@@ -5,7 +5,7 @@ title: 'About'
 ## Get Notified
 
 Get notified about new releases by
-[following us on Twitter](http://twitter.com/stockfishchess),
+following us on [Bluesky](https://bsky.app/profile/stockfishchess.org) and [Twitter](http://twitter.com/stockfishchess),
 joining our [Discord](https://discord.gg/GWDRS3kU6R),
 watching us on [GitHub](https://github.com/official-stockfish/Stockfish),
 or [reading our blog](/blog/).

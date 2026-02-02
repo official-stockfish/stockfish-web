@@ -10,6 +10,11 @@
         "image": "images/social/twitter.svg"
     },
     {
+        "name": "Bluesky",
+        "link": "https://bsky.app/profile/stockfishchess.org",
+        "image": "images/social/bluesky.svg"
+    },
+    {
         "name": "Discord",
         "link": "https://discord.gg/GWDRS3kU6R",
         "image": "images/social/discord.svg"
