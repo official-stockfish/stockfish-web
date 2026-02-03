@@ -1,6 +1,7 @@
 ---
 title: "Stockfish 18"
 date: 2026-01-31T00:00:00-00:00
+description: "Much stronger, with next-generation threat-input network, shared memory for high-concurrency analysis, a refined search algorithm, and much more!"
 ---
 
 Today, we have the pleasure of announcing **Stockfish 18**, a new major release. As always, you can freely download it at [stockfishchess.org/download][1] and use it as a drop-in replacement in the [GUI of your choice][2] to benefit from stronger play and more accurate analysis.
