@@ -1,6 +1,7 @@
 ---
 title: "Stockfish 18"
 date: 2026-01-31T00:00:00-00:00
+image: "images/blog/sf18.webp"
 description: "Much stronger, with next-generation threat-input network, shared memory for high-concurrency analysis, a refined search algorithm, and much more!"
 ---
 
