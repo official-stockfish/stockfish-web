@@ -1,6 +1,8 @@
 ---
 title: "Stockfish 17"
 date: 2024-09-06T00:00:00-00:00
+image: "images/blog/sf17.webp"
+description: "Significantly stronger release with improved principal variations, and NUMA optimization for high-end multi-CPU systems."
 ---
 
 Today we have the pleasure to announce a new major release of Stockfish. As always, you can freely download it at [stockfishchess.org/download](https://stockfishchess.org/download) and use it in the GUI of your choice.

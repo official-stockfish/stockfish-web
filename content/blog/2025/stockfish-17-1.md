@@ -1,6 +1,8 @@
 ---
 title: "Stockfish 17.1"
 date: 2025-03-30T00:00:00-00:00
+image: "images/blog/sf17-1.webp"
+description: "Consistent Elo gains featuring a new speedtest command, improved hardware support beyond 1024 threads, and bug fixes for tablebase support."
 ---
 
 Today, we have the pleasure to announce Stockfish 17.1. As always, you can **freely** download it at [stockfishchess.org/download][1] and use it in the [GUI of your choice][2].

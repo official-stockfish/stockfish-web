@@ -9,13 +9,23 @@
   {{ block "meta_tags" . }}
   <meta name="description" content="{{ .Description | default .Site.Params.homepage_meta_tags.meta_description }}"/>
 
-  <meta name="twitter:image:src" content="{{ .Site.Params.homepage_meta_tags.meta_og_image }}" />
+  {{ $ogImage := .Site.Params.homepage_meta_tags.meta_og_image }}
+  {{ $twitterCard := .Site.Params.homepage_meta_tags.meta_twitter_card }}
+  {{ if .Params.image }}
+    {{ $twitterCard = "summary_large_image" }}
+    {{ $baseURL := .Site.BaseURL }}
+    {{ if not $baseURL }}
+      {{ $baseURL = "https://stockfishchess.org/" }}
+    {{ end }}
+    {{ $ogImage = printf "%s%s" $baseURL .Params.image }}
+  {{ end }}
+  <meta name="twitter:image:src" content="{{ $ogImage }}" />
   <meta name="twitter:site" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_site }}" />
-  <meta name="twitter:card" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_card }}" />
+  <meta name="twitter:card" content="{{ $twitterCard }}" />
   <meta name="twitter:title" content="{{ .Title | default .Site.Params.homepage_meta_tags.meta_og_title }}" />
   <meta name="twitter:description" content="{{ .Description | default .Site.Params.homepage_meta_tags.meta_description }}" />
 
-  <meta property="og:image" content="{{ .Site.Params.homepage_meta_tags.meta_og_image }}" />
+  <meta property="og:image" content="{{ $ogImage }}" />
   <meta property="og:image:alt" content="{{ .Description | default .Site.Params.homepage_meta_tags.meta_description }}" />
   <meta property="og:site_name" content="{{ .Site.Params.homepage_meta_tags.meta_og_site_name }}" />
   <meta property="og:type" content="{{ .Site.Params.homepage_meta_tags.meta_og_type }}" />

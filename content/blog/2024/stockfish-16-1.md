@@ -1,6 +1,8 @@
 ---
 title: "Stockfish 16.1"
 date: 2024-02-24T00:00:00-00:00
+image: "images/blog/sf16-1.webp"
+description: "A notable leap in strength, featuring a fully neural network-based evaluation, the introduction of Dual NNUE, and expanded hardware support with new binaries."
 ---
 
 Today, we have the pleasure to announce Stockfish 16.1. As always, you can **freely** download it at [stockfishchess.org/download](<https://stockfishchess.org/download>) and use it in the [GUI of your choice](<https://github.com/official-stockfish/Stockfish/wiki/Download-and-usage#download-a-chess-gui>).
