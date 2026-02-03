@@ -11,7 +11,11 @@
 
   {{ $ogImage := .Site.Params.homepage_meta_tags.meta_og_image }}
   {{ if .Params.image }}
-    {{ $ogImage = printf "%s%s" .Site.BaseURL .Params.image }}
+    {{ $baseURL := .Site.BaseURL }}
+    {{ if not $baseURL }}
+      {{ $baseURL = "https://desc.stockfish.pages.dev/" }}
+    {{ end }}
+    {{ $ogImage = printf "%s%s" $baseURL .Params.image }}
   {{ end }}
   <meta name="twitter:image:src" content="{{ $ogImage }}" />
   <meta name="twitter:site" content="{{ .Site.Params.homepage_meta_tags.meta_twitter_site }}" />
