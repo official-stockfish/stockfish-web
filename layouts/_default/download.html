@@ -1,29 +1,36 @@
 {{ define "body_classes" }}page-default-single{{ end }}
 
 {{ define "main" }}
-<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+<div class="container pb-6 pt-2 pt-md-10 pb-md-10">
     <div class="row justify-content-start">
         <div class="col-12">
-            <h1 class="title">{{.Title}}</h1>
+            <h1 class="title text-md-center">{{.Title}}</h1>
             <div class="content">
-                <blockquote class="bg-800 py-1 rounded">
-                    <p class="mb-0"><b>Note:</b> Stockfish is a <a target="_blank" href="https://official-stockfish.github.io/docs/stockfish-wiki/Stockfish-FAQ.html#executing-stockfish-opens-a-cmd-window">command line program</a>. You may want to use it in your own <a target="_blank" href="https://official-stockfish.github.io/docs/stockfish-wiki/Download-and-usage.html#download-a-chess-gui">chess GUI</a>.</p>
-                </blockquote>
+                <div class="row justify-content-center mb-0">
+                    <div class="col-12 col-lg-6 col-md-8">
+                        <blockquote class="bg-800 py-1 rounded">
+                            <p class="mb-0"><b>Note:</b> Stockfish is a <a target="_blank" href="https://official-stockfish.github.io/docs/stockfish-wiki/Stockfish-FAQ.html#executing-stockfish-opens-a-cmd-window">command line program</a>. You may want to use it in your own <a target="_blank" href="https://official-stockfish.github.io/docs/stockfish-wiki/Download-and-usage.html#download-a-chess-gui">chess GUI</a>.</p>
+                        </blockquote>
+                        <blockquote class="bg-800 border-info mb-0 py-1 rounded">
+                            <p class="align-items-center d-flex mb-0"><span class="badge badge-danger mr-1">NEW</span><span><b>Universal binaries</b> automatically detect and use the optimal features of your CPU.</span></p>
+                        </blockquote>
+                    </div>
+                </div>
 
-                <div id="download-cards" class="row mx-n1">
+                <div id="download-cards" class="row justify-content-center align-items-stretch my-2 my-md-4">
                     {{ $downloads := .Site.Data.downloads }}
-                    
-                    <!-- Windows -->
-                    {{ partial "download-card" (dict "id" "windows" "title" "Windows" "subtitle" "(x64)" "icon" "fa-brands fa-windows" "osData" $downloads.Windows "footer" (partial "windows-footer.html" .)) }}
 
-                    <!-- ARM -->
-                    {{ partial "download-card" (dict "id" "arm" "title" "ARM" "icon" "fa-solid fa-microchip" "osData" $downloads.ARM) }}
+                    <!-- Windows -->
+                    {{ partial "download-card" (dict "id" "windows" "title" "Windows" "icon" "fa-brands fa-windows" "osData" $downloads.Windows) }}
+
+                    <!-- Android -->
+                    {{ partial "download-card" (dict "id" "arm" "title" "Android" "icon" "fa-brands fa-android" "osData" $downloads.Android) }}
 
                     <!-- Linux -->
-                    {{ partial "download-card" (dict "id" "linux" "title" "Linux" "subtitle" "(x64)" "icon" "fa-brands fa-linux" "osData" $downloads.Linux) }}
+                    {{ partial "download-card" (dict "id" "linux" "title" "Linux" "icon" "fa-brands fa-linux" "osData" $downloads.Linux) }}
 
                     <!-- macOS -->
-                    {{ partial "download-card" (dict "id" "macos" "title" "macOS" "icon" "fa-brands fa-apple" "osData" $downloads.macOS "footer" "Alternative methods:" "extraContent" (partial "macos-extra.html" .)) }}
+                    {{ partial "download-card" (dict "id" "macos" "title" "macOS" "icon" "fa-brands fa-apple" "osData" $downloads.macOS) }}
 
                     <!-- iOS -->
                     {{ partial "download-card" (dict "id" "ios" "title" "iOS" "icon" "fa-brands fa-apple" "extraContent" (partial "ios-extra.html" .)) }}
