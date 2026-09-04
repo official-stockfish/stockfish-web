@@ -5,3 +5,118 @@
 .muted {
 	color: $steel;
 }
+
+.trusted-by-section,
+.what-is-section,
+.features-section {
+	z-index: 1;
+	position: relative;
+}
+
+.trusted-by-section {
+	.trusted-by-item {
+		transition: transform 0.2s ease-in-out;
+
+		&:hover {
+			transform: translateY(-2px);
+
+			.trusted-by-logo {
+				filter: grayscale(0%);
+				opacity: 1;
+			}
+
+			.trusted-by-name {
+				color: inherit;
+			}
+		}
+	}
+
+	.trusted-by-logo-wrapper {
+		height: 60px;
+	}
+
+	.trusted-by-logo {
+		max-height: 50px;
+		max-width: 100%;
+		object-fit: contain;
+		filter: grayscale(100%);
+		opacity: 0.65;
+		transition: filter 0.2s ease-in-out, opacity 0.2s ease-in-out;
+	}
+
+	.trusted-by-name {
+		display: block;
+		font-size: 0.85rem;
+		line-height: 1.2;
+		transition: color 0.2s ease-in-out;
+	}
+}
+
+.what-is-section {
+	.max-width-600 {
+		max-width: 600px;
+	}
+
+	.flow-step {
+		width: 100%;
+		max-width: 220px;
+	}
+
+	.flow-icon-wrapper {
+		height: 70px;
+		width: 100%;
+	}
+
+	.overlapping-logos {
+		position: relative;
+
+		.stacked-logo {
+			width: 44px;
+			height: 44px;
+			padding: 4px;
+			background-color: $gray-800;
+			box-shadow: 1px 1px 0px $gray-400;
+			border: 1px solid $gray-600;
+			border-radius: 4px;
+		}
+
+		.logo-left {
+			transform: rotate(-8deg) translateX(6px);
+			z-index: 1;
+		}
+
+		.logo-right {
+			transform: rotate(8deg) translateX(-6px);
+			z-index: 2;
+		}
+	}
+
+	.stockfish-icon-wrapper {
+		.stockfish-logo {
+			width: 52px;
+			height: 52px;
+		}
+	}
+}
+
+.interface-section,
+.tech-section,
+.trusted-by-section,
+.what-is-section,
+.features-section {
+	z-index: 1;
+	position: relative;
+}
+
+.interface-section {
+	.gui-carousel-img {
+		aspect-ratio: 13 / 8;
+	}
+
+	.bg-dark-translucent {
+		background: rgba(0, 0, 0, 0.75);
+		backdrop-filter: blur(4px);
+		right: 30%;
+		left: 30%;
+	}
+}

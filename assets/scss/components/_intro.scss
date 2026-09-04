@@ -1,9 +1,5 @@
 .intro {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   text-align: center;
-  min-height: calc(100vh - 60px);
   @include media-breakpoint-up(md) {
     text-align: initial;
   }

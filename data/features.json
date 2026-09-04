@@ -1,20 +1,49 @@
 [
   {
-    "title": "Strong",
-    "description": "One of the strongest chess engines in the world. Winner of the Top Chess Engine Championship and Chess.com Computer Chess Championship, and consistently ranks highly on rating lists.",
-    "url": "https://en.wikipedia.org/wiki/Stockfish_(chess)#Competition_results",
-    "button_text": "View competition results"
-  },
-  {
     "title": "Community-Driven",
     "description": "Developed by a global community of chess enthusiasts and programmers and released under the GPLv3 license, so everyone can read the code, modify it, and contribute back.",
+    "icon": "fab fa-discord",
     "url": "https://discord.gg/GWDRS3kU6R",
-    "button_text": "Join our Discord"
+    "button_text": "Join our Discord",
+    "button_color": "#5865F2"
+  },
+  {
+    "title": "Fishtest Framework",
+    "description": "A massive distributed testing framework powered by community CPUs, validating every single code change across millions of test games.",
+    "icon": "fas fa-network-wired",
+    "url": "/get-involved/",
+    "button_text": "Contribute ♥",
+    "button_color": "#DB3F3F"
   },
   {
     "title": "Cross-Platform",
     "description": "Available on Windows, macOS, Linux, Android, and iOS. You can get world-class chess analysis wherever you are.",
+    "icon": "fas fa-computer",
     "url": "/download/",
     "button_text": "Download"
+  },
+  {
+    "title": "Strong",
+    "description": "One of the strongest chess engines in the world. Winner of the Top Chess Engine Championship and Chess.com Computer Chess Championship, and consistently ranks highly on rating lists.",
+    "icon": "fas fa-dumbbell",
+    "url": "https://en.wikipedia.org/wiki/Stockfish_(chess)#Competition_results",
+    "button_text": "View competition results",
+    "secondary": true
+  },
+  {
+    "title": "NNUE Evaluation",
+    "description": "Efficiently Updatable Neural Networks (NNUE) provide fast and precise positional evaluation trained on billions of chess positions.",
+    "icon": "fas fa-brain",
+    "url": "https://en.wikipedia.org/wiki/Efficiently_Updatable_Neural_Network",
+    "button_text": "Learn about NNUE",
+    "secondary": true
+  },
+  {
+    "title": "Advanced Search",
+    "description": "Highly optimized alpha-beta search with aggressive pruning and deep tactical tree exploration.",
+    "icon": "fas fa-sitemap",
+    "url": "https://github.com/official-stockfish/Stockfish",
+    "button_text": "View Source Code",
+    "secondary": true
   }
 ]

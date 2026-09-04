@@ -22,7 +22,7 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="intro">
+<div class="intro align-items-center d-flex justify-content-start mt-0 mt-md-5 mb-5">
   <div class="container">
     <div class="row justify-content-start">
       <div class="col-12 col-md-7 col-lg-8 col-xl-7 order-2 order-md-1">
@@ -60,26 +60,171 @@
   </div>
 </div>
 
+{{if .Site.Data.trusted_by}}
+{{ partial "horizontal-line.html" . }}
+<div class="trusted-by-section my-5">
+  <div class="container text-center mb-4">
 
-{{if .Site.Data.features}}
-<div>
-  <div class="container pt-6 pb-6">
-    <div class="row justify-content-center">
-      {{ range .Site.Data.features }}
-      <div class="col-12 col-md-6 col-lg-4 mb-2">
-        <div class="feature">
-          <h2 class="feature-title">{{ .title }}</h2>
-          <div class="feature-content">
-            <p>{{ .description }}</p>
+    <h2 class="mb-2">{{ .Params.trusted_by_section.title }}</h2>
+    <p class="mb-2 muted">{{ .Params.trusted_by_section.subtitle }}</p>
+
+    <div class="row justify-content-center align-items-center">
+      {{ range $index, $item := .Site.Data.trusted_by }}
+      <div class="{{ if lt $index 4 }}col-6{{ else }}d-none d-md-block{{ end }} col-md-3 py-2">
+        <a href="{{ .url }}" target="_blank" rel="noopener" class="trusted-by-item text-center d-block text-decoration-none">
+          <div class="trusted-by-logo-wrapper mb-2 align-items-center d-flex justify-content-center">
+            <img src="{{ .logo | relURL }}" alt="{{ .name }}" class="trusted-by-logo" loading="lazy" />
           </div>
-          <a href="{{ .url }}" class="button" target="_blank">{{ .button_text }}</a>
-        </div>
+          <span class="trusted-by-name muted">{{ .name }}</span>
+        </a>
       </div>
-      {{end}}
+      {{ end }}
     </div>
   </div>
 </div>
 {{end}}
+
+{{ partial "horizontal-line.html" . }}
+<div class="what-is-section my-5">
+  <div class="container text-center">
+
+    <h2 class="mb-2">{{ .Params.what_is_section.title }}</h2>
+    <p class="mb-4 muted max-width-600 mx-auto">{{ .Params.what_is_section.subtitle }}</p>
+
+    <div class="data-flow-container d-flex flex-column flex-md-row align-items-center justify-content-center">
+      <div class="card flow-step text-center">
+        <div class="card-body flow-icon-wrapper">
+          <i class="fas fa-user fa-2x muted" aria-hidden="true"></i>
+        </div>
+        <div class="card-footer">{{ .Params.what_is_section.steps.one }}</div>
+      </div>
+
+      <div class="flow-arrow my-2 my-md-0 mx-md-3">
+        <i class="fas fa-arrow-down fa-lg d-md-none muted" aria-hidden="true"></i>
+        <i class="fas fa-arrow-right fa-lg d-none d-md-inline-block muted" aria-hidden="true"></i>
+      </div>
+
+      <div class="card flow-step text-center">
+        <div class="card-body flow-icon-wrapper overlapping-logos d-flex flex-wrap align-items-center justify-content-center p-0">
+          <img src="{{ "images/trusted-by/chesscom.svg" | relURL }}" alt="Chess.com" class="stacked-logo logo-left rounded" />
+          <img src="{{ "images/trusted-by/lichess.svg" | relURL }}" alt="Lichess" class="stacked-logo logo-right rounded" />
+        </div>
+        <div class="card-footer">{{ .Params.what_is_section.steps.two }}</div>
+      </div>
+
+      <div class="flow-arrow my-2 my-md-0 mx-md-3">
+        <i class="fas fa-arrow-down fa-lg d-md-none muted" aria-hidden="true"></i>
+        <i class="fas fa-arrow-right fa-lg d-none d-md-inline-block muted" aria-hidden="true"></i>
+      </div>
+
+      <div class="card flow-step text-center">
+        <div class="card-body flow-icon-wrapper d-flex justify-content-center align-items-center">
+          <code class="d-block m-0 text-muted text-left">
+            <pre class="m-0 p-0">position startpos<br>go depth 20</pre>
+          </code>
+        </div>
+        <div class="card-footer">{{ .Params.what_is_section.steps.three }}</div>
+      </div>
+
+      <div class="flow-arrow my-2 my-md-0 mx-md-3">
+        <i class="fas fa-arrow-down fa-lg d-md-none muted" aria-hidden="true"></i>
+        <i class="fas fa-arrow-right fa-lg d-none d-md-inline-block muted" aria-hidden="true"></i>
+      </div>
+
+      <div class="card flow-step text-center">
+        <div class="card-body flow-icon-wrapper stockfish-icon-wrapper d-flex align-items-center justify-content-center">
+          <img src="{{ "images/logo/icon_128x128@2x.webp" | relURL }}" alt="Stockfish Engine" class="stockfish-logo" />
+          <span class="badge font-weight-normal muted text-left">Eval: +0.30<br>Best Move: e4</span>
+        </div>
+        <div class="card-footer">{{ .Params.what_is_section.steps.four }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ if .Params.interface_section }}
+<div class="interface-section my-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <div class="col-12 col-lg-5 mb-4 mb-lg-0 text-center text-lg-left">
+        <h2 class="mb-2">{{ .Params.interface_section.title }}</h2>
+        <p class="mb-2 muted">{{ .Params.interface_section.subtitle }}</p>
+
+        <div class="platform-badges d-flex flex-wrap justify-content-center justify-content-lg-start">
+          <a href="https://official-stockfish.github.io/docs/stockfish-wiki/Download-and-usage.html#online" target="_blank" class="badge bg-800 mb-2 mr-1 p-1 rounded-pill text-body"><i class="fas fa-globe mr-1" aria-hidden="true"></i> Web Platforms</a>
+          <a href="https://official-stockfish.github.io/docs/stockfish-wiki/Download-and-usage.html#computer" target="_blank" class="badge bg-800 mb-2 mr-1 p-1 rounded-pill text-body"><i class="fas fa-desktop mr-1" aria-hidden="true"></i> Desktop GUIs</a>
+          <a href="https://official-stockfish.github.io/docs/stockfish-wiki/Download-and-usage.html#mobile" target="_blank" class="badge bg-800 mb-2 mr-1 p-1 rounded-pill text-body"><i class="fas fa-mobile-alt mr-1" aria-hidden="true"></i> Mobile Apps</a>
+        </div>
+      </div>
+      <div class="col-12 col-lg-7">
+        <div id="interfaceCarousel" class="carousel border rounded overflow-hidden" data-ride="carousel" data-interval="5000">
+          <ol class="carousel-indicators">
+            {{ range $index, $slide := .Params.interface_section.slides }}
+            <li data-target="#interfaceCarousel" data-slide-to="{{ $index }}" class="{{ if eq $index 0 }}active{{ end }}"></li>
+            {{ end }}
+          </ol>
+          <div class="carousel-inner">
+            {{ range $index, $slide := .Params.interface_section.slides }}
+            <div class="carousel-item {{ if eq $index 0 }}active{{ end }}">
+              <img src="{{ $slide.image | relURL }}" class="d-block w-100 gui-carousel-img" alt="{{ $slide.title }}" loading="lazy" />
+              <div class="carousel-caption d-none d-md-block bg-dark-translucent rounded px-3 py-2">
+                <h5 class="m-0">{{ $slide.title }}</h5>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+          <a class="carousel-control-prev" href="#interfaceCarousel" role="button" data-slide="prev" aria-label="Previous slide">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#interfaceCarousel" role="button" data-slide="next" aria-label="Next slide">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ if .Site.Data.features }}
+{{ partial "horizontal-line.html" . }}
+<div class="features-section my-5">
+  <div class="container text-center">
+
+    <h2 class="mb-2">{{ .Params.features_section.title }}</h2>
+    <p class="mb-4 muted">{{ .Params.features_section.subtitle }}</p>
+
+    <div class="row justify-content-center">
+      {{ range .Site.Data.features }}
+      <div class="col-12 col-md-6 col-lg-4 mb-2">
+        <a href="{{ .url }}" class="feature border h-100 d-flex flex-column justify-content-between text-decoration-none" target="_blank">
+          <div>
+            {{ if .icon }}
+            <div class="mb-3 text-muted">
+              <i class="{{ .icon }} fa-2x" aria-hidden="true"></i>
+            </div>
+            {{ end }}
+            <h2 class="text-body">{{ .title }}</h2>
+            <div class="feature-content">
+              <p>{{ .description }}</p>
+            </div>
+          </div>
+
+          {{ if .button_text }}
+          <div class="mt-3">
+            <span class="button {{ if .secondary }}button-secondary {{ end }}w-100" {{ with .button_color }}style="background-color: {{ . }};"{{ end }}>{{ .button_text }}</span>
+          </div>
+          {{ end }}
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
 
 {{ end }}
 

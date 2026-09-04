@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Lichess",
+    "logo": "images/trusted-by/lichess.svg",
+    "url": "https://lichess.org/"
+  },
+  {
+    "name": "Chess.com",
+    "logo": "images/trusted-by/chesscom.svg",
+    "url": "https://www.chess.com/"
+  },
+  {
+    "name": "ChessKid",
+    "logo": "images/trusted-by/chesskid.svg",
+    "url": "https://www.chesskid.com/"
+  },
+  {
+    "name": "ICC",
+    "logo": "images/trusted-by/chessclub.svg",
+    "url": "https://www.chessclub.com/"
+  },
+  {
+    "name": "En Croissant",
+    "logo": "images/trusted-by/encroissant.webp",
+    "url": "https://encroissant.org/"
+  },
+  {
+    "name": "Chessify",
+    "logo": "images/trusted-by/chessify.svg",
+    "url": "https://chessify.me/"
+  },
+  {
+    "name": "ChessMonitor",
+    "logo": "images/trusted-by/chessmonitor.svg",
+    "url": "https://www.chessmonitor.com/"
+  },
+  {
+    "name": "ChessBase",
+    "logo": "images/trusted-by/chessbase.svg",
+    "url": "https://www.chessbase.com/"
+  },
+  {
+    "name": "Chessis",
+    "logo": "images/trusted-by/chessis.jpg",
+    "url": "https://play.google.com/store/apps/details?id=com.chessimprovement.chessis"
+  },
+  {
+    "name": "DroidFish",
+    "logo": "images/trusted-by/droidfish.png",
+    "url": "https://f-droid.org/packages/org.petero.droidfish/"
+  }
+]
