@@ -10,7 +10,7 @@ aliases:
 
 ## Source Code
 - [Stockfish engine on GitHub](https://github.com/official-stockfish/Stockfish)
-- [Download Stockfish 19 source (zip)](https://github.com/official-stockfish/Stockfish/archive/refs/tags/sf_18.zip)
+- [Download Stockfish 19 source (zip)](https://github.com/official-stockfish/Stockfish/archive/refs/tags/sf_19.zip)
 - [Stockfish for Mac on GitHub](https://github.com/daylen/stockfish-mac)
 
 ## Other Versions
