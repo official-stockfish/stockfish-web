@@ -137,6 +137,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const nextBtn = carousel.querySelector(".carousel-control-next");
         let currentIndex = 0;
         let intervalId = null;
+        let isHovered = false;
+        const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
         function showSlide(index) {
             if (index < 0) index = items.length - 1;
@@ -158,7 +160,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         function startAutoPlay() {
             stopAutoPlay();
-            intervalId = setInterval(nextSlide, 5000);
+            if (!reducedMotion.matches && !isHovered) {
+                intervalId = setInterval(nextSlide, 5000);
+            }
         }
 
         function stopAutoPlay() {
@@ -192,8 +196,23 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
 
-        carousel.addEventListener("mouseenter", stopAutoPlay);
-        carousel.addEventListener("mouseleave", startAutoPlay);
+        carousel.addEventListener("mouseenter", function() {
+            isHovered = true;
+            stopAutoPlay();
+        });
+
+        carousel.addEventListener("mouseleave", function() {
+            isHovered = false;
+            startAutoPlay();
+        });
+
+        reducedMotion.addEventListener("change", function() {
+            if (reducedMotion.matches) {
+                stopAutoPlay();
+            } else {
+                startAutoPlay();
+            }
+        });
 
         startAutoPlay();
     }
