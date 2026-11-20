@@ -48,5 +48,10 @@
     "name": "DroidFish",
     "logo": "images/trusted-by/droidfish.png",
     "url": "https://f-droid.org/packages/org.petero.droidfish/"
+  },
+  {
+    "name": "Chessa",
+    "logo": "images/trusted-by/chessa.svg",
+    "url": "https://chessa.io/"
   }
 ]
